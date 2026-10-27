@@ -1,0 +1,15 @@
+.metadata-quality-drawer .ant-drawer-body { background:linear-gradient(180deg,rgb(255 153 0 / 3%),transparent 180px),#111; }
+.quality-overview { display:flex; align-items:center; gap:12px; margin-bottom:12px; border:1px solid #303030; border-radius:8px; padding:12px; background:#151515; }
+.quality-overview > div { display:grid; gap:2px; }
+.quality-overview strong { color:#fff; font-size:22px; line-height:1.15; }
+.quality-overview strong small { color:#aaa; font-size:11px; font-weight:600; }
+.quality-overview > div > span:last-child { color:#888; font-size:11px; }
+.quality-stats { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.quality-stat { padding:9px 10px; }
+.quality-stat span { color:#aaa; font-size:10px; font-weight:750; }
+.quality-indexed-stats { margin:-2px 0 12px; }
+.metadata-quality-drawer .drawer-list { border-color:#303030; background:#303030; }
+.metadata-quality-drawer .drawer-list-row { background:#151515; }
+.metadata-quality-drawer .drawer-list-row:nth-child(even) { background:#181818; }
+.metadata-quality-drawer .drawer-list-row:hover { background:#211b12; }
+@media (max-width:620px) { .quality-stats { grid-template-columns:repeat(2,minmax(0,1fr)); } }

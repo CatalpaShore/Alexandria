@@ -1,0 +1,261 @@
+:root {
+  --motion-duration-instant: 100ms;
+  --motion-duration-fast: 140ms;
+  --motion-duration-base: 180ms;
+  --motion-duration-surface: 240ms;
+  --motion-duration-slow: 320ms;
+  --motion-ease-standard: cubic-bezier(.2, .75, .25, 1);
+  --motion-ease-enter: cubic-bezier(.16, 1, .3, 1);
+  --motion-ease-exit: cubic-bezier(.4, 0, 1, 1);
+  --motion-distance-small: 4px;
+  --motion-distance-medium: 10px;
+  --motion-press-scale: .985;
+}
+
+.motion-surface {
+  position: relative;
+  min-width: 0;
+}
+
+.motion-surface-content {
+  min-width: 0;
+  animation: motion-surface-enter var(--motion-duration-surface) var(--motion-ease-enter) both;
+}
+
+.motion-surface[data-motion-direction="forward"] > .motion-surface-content {
+  animation-name: motion-surface-forward-enter;
+}
+
+.motion-surface[data-motion-direction="backward"] > .motion-surface-content {
+  animation-name: motion-surface-backward-enter;
+}
+
+.motion-surface.is-pending .motion-surface-content {
+  opacity: .72;
+  transition: opacity var(--motion-duration-fast) ease;
+}
+
+.motion-surface-pending {
+  position: absolute;
+  z-index: 30;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 2px;
+  overflow: hidden;
+  background: rgb(255 153 0 / 12%);
+  pointer-events: none;
+}
+
+.motion-surface-pending::after {
+  display: block;
+  width: 38%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, transparent, var(--amw-orange-hot), transparent);
+  content: "";
+  animation: motion-progress-travel 1.1s var(--motion-ease-standard) infinite;
+}
+
+.motion-tab-panel {
+  animation: motion-tab-enter var(--motion-duration-base) var(--motion-ease-enter) both;
+}
+
+.motion-list-item {
+  animation: motion-list-enter var(--motion-duration-base) var(--motion-ease-enter) both;
+}
+
+.motion-pressable {
+  transition:
+    border-color var(--motion-duration-fast) ease,
+    background-color var(--motion-duration-fast) ease,
+    color var(--motion-duration-fast) ease,
+    opacity var(--motion-duration-fast) ease,
+    transform var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
+.motion-pressable:active:not(:disabled) {
+  transform: scale(var(--motion-press-scale));
+}
+
+.motion-status-card {
+  transition:
+    border-color var(--motion-duration-base) ease,
+    background-color var(--motion-duration-base) ease,
+    opacity var(--motion-duration-base) ease,
+    transform var(--motion-duration-base) var(--motion-ease-standard);
+}
+
+.app-shell .ant-btn:not(.ant-btn-link),
+.app-shell button:not(.ant-switch):not(.ant-segmented-item) {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.app-shell .ant-btn:not(.ant-btn-link):active:not(:disabled),
+.app-shell button.motion-pressable:active:not(:disabled) {
+  transform: scale(var(--motion-press-scale));
+}
+
+.app-shell .ant-btn-loading-icon,
+.ant-message-notice-content,
+.ant-notification-notice,
+.ant-popover-inner,
+.ant-dropdown-menu {
+  animation: motion-feedback-enter var(--motion-duration-base) var(--motion-ease-enter) both;
+}
+
+.app-shell [aria-pressed="true"] > svg,
+.app-shell .is-favorite-action svg,
+.app-shell .topic-entity-favorite.is-active svg {
+  animation: motion-selection-confirm var(--motion-duration-slow) var(--motion-ease-enter) both;
+  transform-origin: center;
+}
+
+.motion-expand-region {
+  animation: motion-expand-enter var(--motion-duration-surface) var(--motion-ease-enter) both;
+  transform-origin: top;
+}
+
+.ant-alert,
+.ant-empty,
+.ant-result,
+.drawer-list-loading {
+  animation: motion-feedback-enter var(--motion-duration-base) var(--motion-ease-enter) both;
+}
+
+@keyframes motion-surface-enter {
+  from { opacity: 0; transform: translateY(var(--motion-distance-small)); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes motion-surface-forward-enter {
+  from { opacity: 0; transform: translateX(var(--motion-distance-medium)); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes motion-surface-backward-enter {
+  from { opacity: 0; transform: translateX(calc(var(--motion-distance-medium) * -1)); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes motion-tab-enter {
+  from { opacity: 0; transform: translateY(3px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes motion-list-enter {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes motion-expand-enter {
+  from { opacity: 0; transform: scaleY(.985) translateY(-2px); }
+  to { opacity: 1; transform: scaleY(1) translateY(0); }
+}
+
+@keyframes motion-progress-travel {
+  from { transform: translateX(-110%); }
+  to { transform: translateX(365%); }
+}
+
+@keyframes motion-feedback-enter {
+  from { opacity: 0; transform: translateY(3px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes motion-selection-confirm {
+  0% { transform: scale(.72); }
+  62% { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(workspace-content),
+  ::view-transition-old(workspace-content),
+  ::view-transition-new(workspace-content) {
+    animation-duration: 1ms !important;
+  }
+
+  :root {
+    --motion-duration-instant: 1ms;
+    --motion-duration-fast: 1ms;
+    --motion-duration-base: 1ms;
+    --motion-duration-surface: 1ms;
+    --motion-duration-slow: 1ms;
+    --motion-distance-small: 0px;
+    --motion-distance-medium: 0px;
+    --motion-press-scale: 1;
+  }
+
+  .motion-surface-content,
+  .workspace-layout.is-wall-chrome-entering .wall-chrome-sider,
+  .workspace-layout.is-wall-chrome-entering .wall-chrome-toolbar,
+  .motion-tab-panel,
+  .motion-list-item,
+  .motion-expand-region,
+  .ant-alert,
+  .ant-empty,
+  .ant-result,
+  .drawer-list-loading,
+  .motion-surface-pending::after,
+  .agent-message.is-entering,
+  .agent-process-step.is-active,
+  .backup-readiness.is-checking .backup-readiness-icon,
+  .backup-job.is-running::before,
+  .backup-job.is-scanning::before,
+  .backup-job.is-queued::before,
+  .ingestion-stage.is-processing i,
+  .translation-task-card.is-running::before,
+  .translation-pipeline-node.is-active i,
+  .topic-content-shell.is-refreshing::before,
+  .entity-shell.is-refreshing::before,
+  .drawer-list-row,
+  .health-section,
+  .health-stat-grid .ant-statistic,
+  .operations-report-card,
+  .operations-status-strip,
+  .maintenance-pane,
+  .maintenance-asset-block,
+  .maintenance-backup-list .ant-list-item,
+  .changelog-entry.motion-list-item .changelog-dot,
+  .knowledge-graph-node-popover,
+  .library-settings-drawer .path-field,
+  .library-settings-drawer .source-row,
+  .metadata-manager-drawer .metadata-bulk-row,
+  .detail-shell,
+  .detail-content-preview-card,
+  .modal-backdrop,
+  .player-shell,
+  .player-details,
+  .player-subtitle-overlay,
+  .player-playback-status,
+  .player-storyboard-preview,
+  .player-gesture-hint {
+    animation: none !important;
+  }
+
+  .app-shell .ant-btn-loading-icon,
+  .ant-message-notice-content,
+  .ant-notification-notice,
+  .ant-popover-inner,
+  .ant-dropdown-menu,
+  .app-shell [aria-pressed="true"] > svg,
+  .app-shell .is-favorite-action svg,
+  .app-shell .topic-entity-favorite.is-active svg {
+    animation: none !important;
+  }
+
+  .motion-surface.is-pending .motion-surface-content {
+    opacity: 1;
+  }
+
+  .workspace-layout.is-wall-chrome-leaving .wall-chrome-sider,
+  .workspace-layout.is-wall-chrome-leaving .wall-chrome-toolbar {
+    transform: none;
+    transition: none;
+  }
+
+  html.is-switching-user body {
+    transform: none !important;
+  }
+}

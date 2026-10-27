@@ -1,0 +1,37 @@
+/* SVGs are graphics, not text: avoid baseline space in shared button wrappers. */
+.ant-btn .ant-btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.ant-btn-icon-only .ant-btn-icon {
+  margin: 0;
+}
+
+button > svg,
+.ant-btn .ant-btn-icon > svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Fixed-size native icon controls must not inherit browser button padding. */
+:is(.play-pill, .favorite-button, .reel-play-button, .reel-favorite-button,
+    .entity-virtual-play, .entity-virtual-set-cover, .player-transport-button) {
+  padding: 0;
+  line-height: 1;
+}
+
+.player-topbar button:has(> svg:only-child) {
+  padding: 0;
+  line-height: 1;
+}
+
+/* The triangle's area centroid is left of its SVG viewport center.
+   Correct only standalone Play icons; pause/skip icons remain geometric-centered. */
+:is(.play-pill, .entity-virtual-play, .home-media-play, .viewing-recommendation-play,
+    .reel-play-button, .player-transport-button)
+  > .lucide-play {
+  translate: 5.5556% 0;
+}

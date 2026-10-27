@@ -1,0 +1,326 @@
+.playlist-drawer-title,
+.playlist-drawer .ant-segmented-item-label > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.playlist-drawer .ant-drawer-body {
+  padding: 14px 16px 18px;
+}
+
+.playlist-create-panel {
+  display: grid;
+  gap: 9px;
+  margin-bottom: 14px;
+  border: 1px solid rgb(255 153 0 / 35%);
+  border-radius: 6px;
+  padding: 11px;
+  background: #111111;
+}
+
+.playlist-row,
+.playlist-detail-item {
+  transition:
+    border-color var(--motion-duration-fast) ease,
+    background-color var(--motion-duration-fast) ease,
+    opacity var(--motion-duration-fast) ease,
+    transform var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
+.playlist-row:hover,
+.playlist-row:focus-within,
+.playlist-detail-item:hover,
+.playlist-detail-item:focus-within {
+  background: #191919;
+}
+
+.playlist-query-preview {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  border-color: rgb(255 153 0 / 32%);
+  color: var(--amw-orange-hot);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.playlist-list-heading {
+  display: flex;
+  min-height: 28px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.playlist-loading,
+.playlist-drawer .ant-empty {
+  display: grid;
+  min-height: 180px;
+  place-items: center;
+}
+
+.playlist-list {
+  display: grid;
+  overflow: hidden;
+  border: 1px solid var(--amw-border);
+  border-radius: 6px;
+  background: var(--amw-border);
+  gap: 1px;
+}
+
+.playlist-row {
+  min-width: 0;
+  background: var(--amw-panel);
+}
+
+.playlist-row-main {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: 34px minmax(0, 1fr) max-content;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.playlist-kind-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid var(--amw-border);
+  border-radius: 6px;
+  background: #0b0b0b;
+  color: var(--amw-muted);
+}
+
+.playlist-kind-icon.is-smart {
+  border-color: rgb(255 153 0 / 44%);
+  color: var(--amw-orange);
+}
+
+.playlist-row-copy {
+  display: grid;
+  min-width: 0;
+  gap: 3px;
+}
+
+.playlist-row-copy > .ant-typography {
+  min-width: 0;
+  margin: 0;
+}
+
+.playlist-name-line {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 7px;
+}
+
+.playlist-name-line h5.ant-typography {
+  min-width: 0;
+  margin: 0;
+  color: var(--amw-text);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.playlist-name-line .ant-tag {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.playlist-row-meta {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 8px;
+  color: var(--amw-faint);
+  font-size: 11px;
+}
+
+.playlist-row-meta span:first-child {
+  overflow: hidden;
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.playlist-row-meta span:last-child {
+  flex: 0 0 auto;
+}
+
+.playlist-row-actions {
+  align-self: center;
+}
+
+.playlist-detail-drawer .ant-drawer-content,
+.playlist-detail-drawer .ant-drawer-header,
+.playlist-detail-drawer .ant-drawer-body {
+  background: #101010;
+}
+
+.playlist-detail-drawer .ant-drawer-header {
+  border-bottom-color: var(--amw-border);
+}
+
+.playlist-detail-drawer .ant-drawer-title {
+  color: var(--amw-text);
+}
+
+.playlist-detail-drawer .ant-drawer-body {
+  padding: 12px 14px 20px;
+}
+
+.playlist-detail-loading,
+.playlist-detail-drawer .ant-empty {
+  display: grid;
+  min-height: 260px;
+  place-items: center;
+}
+
+.playlist-detail-list {
+  display: grid;
+  overflow: hidden;
+  border: 1px solid var(--amw-border);
+  border-radius: 6px;
+  background: var(--amw-border);
+  gap: 1px;
+}
+
+.playlist-detail-item {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: 126px minmax(0, 1fr) max-content;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  background: var(--amw-panel);
+}
+
+.playlist-detail-list.is-editing .playlist-detail-item {
+  grid-template-columns: 126px minmax(0, 1fr) max-content max-content;
+}
+
+.playlist-detail-poster {
+  position: relative;
+  display: grid;
+  width: 126px;
+  height: 82px;
+  place-items: center;
+  overflow: hidden;
+  border: 0;
+  border-radius: 5px;
+  padding: 0;
+  background: #050505;
+  color: var(--amw-faint);
+  cursor: pointer;
+}
+
+.playlist-detail-poster img {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playlist-detail-copy {
+  display: grid;
+  min-width: 0;
+  gap: 5px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.playlist-detail-copy strong,
+.playlist-detail-copy span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.playlist-detail-copy strong {
+  color: var(--amw-text);
+  font-size: 14px;
+}
+
+.playlist-detail-copy span {
+  color: var(--amw-muted);
+  font-size: 12px;
+}
+
+.playlist-detail-duration {
+  color: var(--amw-faint);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.playlist-detail-actions {
+  display: inline-flex;
+  gap: 4px;
+}
+
+@media (max-width: 720px) {
+  .playlist-drawer .ant-drawer-content-wrapper {
+    width: 100% !important;
+  }
+
+  .playlist-drawer .ant-drawer-body {
+    padding: 10px;
+  }
+
+  .playlist-row-main {
+    grid-template-columns: 30px minmax(0, 1fr) max-content;
+    gap: 8px;
+    padding: 9px 8px;
+  }
+
+  .playlist-kind-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .playlist-detail-drawer .ant-drawer-content-wrapper {
+    width: 100% !important;
+  }
+
+  .playlist-detail-drawer .ant-drawer-body {
+    padding: 8px;
+  }
+
+  .playlist-detail-item,
+  .playlist-detail-list.is-editing .playlist-detail-item {
+    grid-template-columns: 88px minmax(0, 1fr) max-content;
+    gap: 8px;
+    padding: 6px;
+  }
+
+  .playlist-detail-poster {
+    width: 88px;
+    height: 58px;
+  }
+
+  .playlist-detail-copy strong {
+    font-size: 12px;
+  }
+
+  .playlist-detail-copy span {
+    font-size: 10px;
+  }
+
+  .playlist-detail-list.is-editing .playlist-detail-duration {
+    display: none;
+  }
+
+  .playlist-detail-list.is-editing .playlist-detail-actions {
+    grid-column: 1 / -1;
+    justify-content: flex-end;
+    border-top: 1px solid var(--amw-border);
+    padding-top: 6px;
+  }
+}

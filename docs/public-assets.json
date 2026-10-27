@@ -1,0 +1,198 @@
+{
+  "client/public/brand-icon.png": {
+    "sha256": "bc9d53871425a211af5954a60f708de2915cbfb269fdf8f9b6cf18e736e1902b",
+    "purpose": "Original Alexandria project brand icon; no personal metadata or third-party photographs."
+  },
+  "docs/screenshots/curator-demo.png": {
+    "sha256": "e5ad3335c8e1a4c026bb2a5fbfab29a8dae568eadc63366d43084d73f9f6e3f5",
+    "purpose": "Reviewed actual non-adult Demo screenshot using licensed Blender open-film artwork and mock activity; no private paths or adult imagery. Artwork retains its CC BY attribution and license; see docs/DEMO_FILMS.md."
+  },
+  "docs/screenshots/player-subtitles.png": {
+    "sha256": "a575bd6f5dc8b28b48c83b9e56f6072fb2336f826f97fdc0b786a880f4875a8a",
+    "purpose": "Reviewed actual non-adult Demo screenshot using licensed Blender open-film artwork and mock activity; no private paths or adult imagery. Artwork retains its CC BY attribution and license; see docs/DEMO_FILMS.md."
+  },
+  "docs/screenshots/media-wall.png": {
+    "sha256": "c99055248ab982415d24c6836d88e408f1cbccc0b769aa805c43ead153adc604",
+    "purpose": "Reviewed actual non-adult Demo screenshot using licensed Blender open-film artwork and mock activity; no private paths or adult imagery. Artwork retains its CC BY attribution and license; see docs/DEMO_FILMS.md."
+  },
+  "client/public/showcase/knowledge-graph.png": {
+    "sha256": "9f4205d38b5e8cc379225df4fb4d4fae2855ec19058588789356925a886bad98",
+    "purpose": "Reviewed actual non-adult Demo screenshot using licensed Blender open-film artwork and mock activity; no private paths or adult imagery. Artwork retains its CC BY attribution and license; see docs/DEMO_FILMS.md."
+  },
+  "client/public/showcase/media-detail.png": {
+    "sha256": "ed1ad8c8ba1600c8ee04d92e3cf267a4b0c97602471a153ef22ea9338faddbea",
+    "purpose": "Reviewed actual non-adult Demo screenshot using licensed Blender open-film artwork and mock activity; no private paths or adult imagery. Artwork retains its CC BY attribution and license; see docs/DEMO_FILMS.md."
+  },
+  "client/public/showcase/mobile-wall.png": {
+    "sha256": "166d6663c1bf001dfcaf29605b9b5f7c61baa726dc2d3263cff9fae14659700a",
+    "purpose": "Reviewed actual non-adult Demo screenshot using licensed Blender open-film artwork and mock activity; no private paths or adult imagery. Artwork retains its CC BY attribution and license; see docs/DEMO_FILMS.md."
+  },
+  "client/public/showcase/personal-library.png": {
+    "sha256": "204e41a0881c64654dfd6b6d4c9543ca85469c7606556d87c14bf1c723b47b41",
+    "purpose": "Reviewed actual non-adult Demo screenshot using licensed Blender open-film artwork and mock activity; no private paths or adult imagery. Artwork retains its CC BY attribution and license; see docs/DEMO_FILMS.md."
+  },
+  "client/public/showcase/topics.png": {
+    "sha256": "1dced9ec6869e49e10a14d9df448f457e55f97553d43c33429a4ba253a61e74a",
+    "purpose": "Reviewed actual non-adult Demo screenshot using licensed Blender open-film artwork and mock activity; no private paths or adult imagery. Artwork retains its CC BY attribution and license; see docs/DEMO_FILMS.md."
+  },
+  "client/public/showcase/tour-poster.png": {
+    "sha256": "139e71cf11ee4c222d2c6e35a66f693b654e7ab00915f478d00cefbe3e102f24",
+    "purpose": "Text-only Alexandria title card extracted from the redacted product tour; no personal information or adult imagery."
+  },
+  "client/public/showcase/viewing-desk.png": {
+    "sha256": "c31c963dd31918a2458d25d0cbb28cbc36d07ce4d9b7abdcfabd29e2879b63b5",
+    "purpose": "Reviewed actual non-adult Demo screenshot using licensed Blender open-film artwork and mock activity; no private paths or adult imagery. Artwork retains its CC BY attribution and license; see docs/DEMO_FILMS.md."
+  },
+  "client/public/tour/product-tour.mp4": {
+    "sha256": "b105527f470878b7565120a82edab732098cea6e41c2beb33957e4b38f46dfa4",
+    "purpose": "Owner-provided final path-redacted product tour, byte-for-byte copy; blurred covers/playback/private titles/paths. May retain performer and work identifiers. Excluded from non-adult Demo serving."
+  },
+  "client/public/tour/subtitles-zh.vtt": {
+    "sha256": "057e8927c79953fb879b339b72be7717e9432f9b3e198b00b58cc4ad4699e9ed",
+    "purpose": "Chinese narration captions for the reviewed product tour; no private paths or work descriptions."
+  },
+  "client/public/demo/films/big-buck-bunny.png": {
+    "sha256": "518a20e829df88d87c5c90d9960974c8880d46e57f5c63689be20242fac906c4",
+    "purpose": "Reviewed non-adult official project artwork for Big Buck Bunny · 大雄兔; see docs/DEMO_FILMS.md.",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "source": "https://studio.blender.org/files/public/thumbnail/92/96/9296b1255fff3ef0e25da43f70616349_m.webp",
+    "attribution": "© copyright 2008, Blender Foundation / www.bigbuckbunny.org",
+    "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+  },
+  "client/public/demo/films/sintel.png": {
+    "sha256": "429b9bcc291634c4924f137a3c163125edf4a0d37048df0e0cffeda576f978cd",
+    "purpose": "Reviewed non-adult official project artwork for Sintel · 辛特尔; see docs/DEMO_FILMS.md.",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "source": "https://studio.blender.org/files/public/thumbnail/03/f7/03f7b0d15c55b428680d4c6bb313f742_m.webp",
+    "attribution": "© copyright Blender Foundation | www.sintel.org",
+    "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+  },
+  "client/public/demo/films/spring.png": {
+    "sha256": "9ff411400cf664303ad137b826bea1cf3f636da3fa16cef8c390b02c7c90496a",
+    "purpose": "Reviewed non-adult official project artwork for Spring · 春; see docs/DEMO_FILMS.md.",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://studio.blender.org/files/public/thumbnail/ea/65/ea65feaacf95911f39844e2ea97e68b5_m.webp",
+    "attribution": "© Blender Foundation | cloud.blender.org/spring",
+    "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+  },
+  "client/public/demo/films/wing-it.png": {
+    "sha256": "8b36c92c5db9b0ea6c5f6dbba20fc84d06eff6a84610f1f32e0a8351379bb95d",
+    "purpose": "Reviewed non-adult official project artwork for Wing It!; see docs/DEMO_FILMS.md.",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://studio.blender.org/files/public/thumbnail/c2/6d/c26d3b56aeb6bc9bf1ba6ee8e27b7ccd_m.webp",
+    "attribution": "© Blender Foundation | studio.blender.org",
+    "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+  },
+  "client/public/demo/films/charge.png": {
+    "sha256": "2e6630bc0c07054cd8129293fb4e54a09256dc6b9bfdb9722c08f33bfb29a842",
+    "purpose": "Reviewed non-adult official project artwork for Charge; see docs/DEMO_FILMS.md.",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://studio.blender.org/files/public/thumbnail/ae/13/ae134adfbfa91160947451873ab09c6d_m.webp",
+    "attribution": "© Blender Foundation | studio.blender.org",
+    "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+  },
+  "client/public/demo/films/coffee-run.png": {
+    "sha256": "ceaeda92bfa08762ba6cd19667feb4145faf40142c2499ebd33c3139717063ef",
+    "purpose": "Reviewed non-adult official project artwork for Coffee Run; see docs/DEMO_FILMS.md.",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://studio.blender.org/files/public/thumbnail/7a/43/7a43fa6b0bc44e62f1cbb21473800e07_m.webp",
+    "attribution": "© Blender Foundation | studio.blender.org",
+    "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+  },
+  "client/public/demo/films/glass-half.png": {
+    "sha256": "aab3042369c1da2ed78260981d9fb32fe4039a5ea00da5c3cfb197b4ff82beb1",
+    "purpose": "Reviewed non-adult official project artwork for Glass Half; see docs/DEMO_FILMS.md.",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "source": "https://studio.blender.org/files/public/thumbnail/ca/e4/cae4b30a27c3a0fe21d494d20b4fce83_m.webp",
+    "attribution": "© Blender Foundation | studio.blender.org",
+    "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+  },
+  "client/public/demo/films/caminandes-3.png": {
+    "sha256": "a36b27cb22f1c057064edb209ba54340a03476de69976bcfc5bf1b958e6927e8",
+    "purpose": "Reviewed non-adult official project artwork for Caminandes: Llamigos; see docs/DEMO_FILMS.md.",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://studio.blender.org/files/public/thumbnail/6e/84/6e84fd08dda59d66aeb2152cb879f160_m.webp",
+    "attribution": "© Blender Foundation | studio.blender.org",
+    "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+  },
+  "client/public/demo/films/caminandes-2.png": {
+    "sha256": "a2e8da23ed6c81a3b2ff32d79eec9d2ee6ad6ab0e2961f0020f4cbe330ceb220",
+    "purpose": "Reviewed non-adult official project artwork for Caminandes: Gran Dillama; see docs/DEMO_FILMS.md.",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://studio.blender.org/files/public/thumbnail/80/4b/804beb324d82e98db44d8308d9e6f495_m.webp",
+    "attribution": "© Blender Foundation | studio.blender.org",
+    "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+  },
+  "client/public/demo/films/hero.png": {
+    "sha256": "996da90259a5a9bee6d6a702b5d3d3786dfe0c92708a30efefac4bc513d4e9f2",
+    "purpose": "Reviewed non-adult official project artwork for Hero; see docs/DEMO_FILMS.md.",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://studio.blender.org/files/public/thumbnail/d7/ee/d7ee634f13f6adacfaaf8e1017148bdc_m.webp",
+    "attribution": "© Blender Foundation | studio.blender.org",
+    "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+  },
+  "client/public/demo/films/elephants-dream.png": {
+    "sha256": "8b25e3807959dc80dffa96d65645d35862931ad3d1d2209184e8f353ddd78d77",
+    "purpose": "Reviewed non-adult official project artwork for Elephants Dream; see docs/DEMO_FILMS.md.",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://studio.blender.org/files/public/thumbnail/04/77/0477dfea1d88a94ba1a75f99f433b8f6_m.webp",
+    "attribution": "© Blender Foundation | studio.blender.org",
+    "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+  },
+  "client/public/demo/films/cosmos-laundromat.png": {
+    "sha256": "98aa2c92b85441d10f9baa95993ea69938a14343c2109bfaa34669fc27469476",
+    "purpose": "Reviewed non-adult official project artwork for Cosmos Laundromat: First Cycle; see docs/DEMO_FILMS.md.",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://studio.blender.org/files/public/thumbnail/75/54/7554352c0ec78a8540a8e5f3b3671927_m.webp",
+    "attribution": "© Blender Foundation | studio.blender.org",
+    "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+  },
+  "client/public/tour/product-tour-en.mp4": {
+    "sha256": "679123a4a7a153249cbc2b5894820718f7a8c0133b2db81329d24f47d6543f06",
+    "purpose": "Localized en narration, captions and chapter labels over the approved v6 path-redacted recording. Recorded interface remains Chinese. Blurred covers/playback/private titles/paths; performer and work identifiers may remain. Not served by non-adult Demo."
+  },
+  "client/public/tour/subtitles-en.vtt": {
+    "sha256": "d5a0123052adf908f48c6acb398357b7d28cce11b42e9559b3234ab6c6e3eebc",
+    "purpose": "en narration captions aligned to the localized product tour; no private paths or work descriptions."
+  },
+  "client/public/showcase/tour-poster-en.png": {
+    "sha256": "1f8b92758948af09f46a9cb3f56137070571ab8b21e9ab866b47c4be2daec76f",
+    "purpose": "en text-only Alexandria title card from the localized redacted tour; no personal or adult imagery."
+  },
+  "client/public/tour/product-tour-ja.mp4": {
+    "sha256": "b784d2f78435a1c10dca718dcc19a763e556acd054d00caeedc502b88827674a",
+    "purpose": "Localized ja narration, captions and chapter labels over the approved v6 path-redacted recording. Recorded interface remains Chinese. Blurred covers/playback/private titles/paths; performer and work identifiers may remain. Not served by non-adult Demo."
+  },
+  "client/public/tour/subtitles-ja.vtt": {
+    "sha256": "efc99e846b7ba122b5dffec0dc978dc4de63ed98deeef602a40c5a930a9a7d6e",
+    "purpose": "ja narration captions aligned to the localized product tour; no private paths or work descriptions."
+  },
+  "client/public/showcase/tour-poster-ja.png": {
+    "sha256": "de23450ac422f8f7edb9c6b99865ef2c8c31e0fdcf6a062bea647d8f7662e215",
+    "purpose": "ja text-only Alexandria title card from the localized redacted tour; no personal or adult imagery."
+  },
+  "client/public/showcase/mobile-topics.png": {
+    "sha256": "01ad2c05a38d0ab2083bf956b0a0a08f55a042540a4b19318ef927373bc54405",
+    "purpose": "Reviewed actual non-adult Demo screenshot using licensed Blender open-film artwork and mock activity; no private paths or adult imagery. Artwork retains its CC BY attribution and license; see docs/DEMO_FILMS.md."
+  },
+  "client/public/showcase/mobile-viewing.png": {
+    "sha256": "819c70f42c47e8c8fc82ce99e535f6b175698fed12b24295a2e01b32cc5edfbc",
+    "purpose": "Reviewed actual non-adult Demo screenshot using licensed Blender open-film artwork and mock activity; no private paths or adult imagery. Artwork retains its CC BY attribution and license; see docs/DEMO_FILMS.md."
+  },
+  "client/public/showcase/mobile-curator.png": {
+    "sha256": "40d8f495b06492c3f4c5ce37afa2d08368f9cfbe89216144a246039ed08ecff1",
+    "purpose": "Reviewed actual non-adult Demo screenshot using licensed Blender open-film artwork and mock activity; no private paths or adult imagery. Artwork retains its CC BY attribution and license; see docs/DEMO_FILMS.md."
+  }
+}

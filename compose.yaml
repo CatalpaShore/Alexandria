@@ -1,0 +1,22 @@
+name: alexandria-public
+services:
+  media-wall:
+    build: .
+    image: alexandria-public:local
+    ports:
+      - "127.0.0.1:${ALEXANDRIA_PORT:-4310}:3000"
+    environment:
+      MEDIA_SOURCES: "LOCAL:Library=/media"
+      AMW_LAN_MODE: "true"
+      AMW_LAN_AUTH: "true"
+      AMW_AGENT_ENABLED: "false"
+      MEDIA_WORKER_MODE: "embedded"
+      METADATA_SERVER_URL: ${METADATA_SERVER_URL:-}
+      METADATA_TOKEN: ${METADATA_TOKEN:-}
+      METADATA_FALLBACK_SERVER_URL: ${METADATA_FALLBACK_SERVER_URL:-}
+      METADATA_FALLBACK_TOKEN: ${METADATA_FALLBACK_TOKEN:-}
+      METADATA_AUTO_ENRICH: ${METADATA_AUTO_ENRICH:-false}
+    volumes:
+      - "${ALEXANDRIA_MEDIA_DIR:-./media}:/media:ro"
+      - "${ALEXANDRIA_DATA_DIR:-./.local/docker-data}:/app/data"
+    restart: unless-stopped

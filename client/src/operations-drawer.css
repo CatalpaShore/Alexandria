@@ -1,0 +1,41 @@
+.operations-drawer-title { display:flex; align-items:center; gap:10px; }
+.operations-drawer-title > span:last-child { display:grid; gap:2px; }
+.operations-drawer-title strong { color:#f6f6f6; font-size:15px; line-height:1.2; }
+.operations-drawer-title small { color:#909090; font-size:11px; font-weight:500; }
+.operations-title-icon { display:grid; width:34px; height:34px; place-items:center; flex:0 0 34px; border:1px solid rgb(255 153 0 / 30%); border-radius:9px; background:rgb(255 153 0 / 10%); color:var(--amw-orange-hot); }
+.operations-filter-bar { position:sticky; z-index:2; top:-24px; display:flex; align-items:center; justify-content:space-between; gap:12px; margin:0 -24px 12px; border-block:1px solid #303030; padding:10px 24px; background:rgb(17 17 17 / 96%); backdrop-filter:blur(12px); }
+.operations-filter-bar > div { display:grid; min-width:0; gap:1px; }
+.operations-filter-bar > div strong { color:#f3f3f3; font-size:12px; }
+.operations-filter-bar > div span { color:#888; font-size:10px; }
+.drawer-list-row,
+.health-section,
+.health-stat-grid .ant-statistic,
+.operations-report-card,
+.operations-status-strip {
+  animation: motion-list-enter var(--motion-duration-base) var(--motion-ease-enter) both;
+}
+.drawer-list-row:nth-child(2),
+.health-section:nth-child(2),
+.health-stat-grid .ant-statistic:nth-child(2) { animation-delay:24ms; }
+.drawer-list-row:nth-child(3),
+.health-section:nth-child(3),
+.health-stat-grid .ant-statistic:nth-child(3) { animation-delay:48ms; }
+.drawer-list-row:nth-child(4),
+.health-section:nth-child(4),
+.health-stat-grid .ant-statistic:nth-child(4) { animation-delay:72ms; }
+.drawer-list-row:nth-child(n + 9) { animation:none; }
+.compatibility-stat,
+.quality-stat,
+.metadata-status-chip,
+.operations-filter-bar .ant-select,
+.operations-filter-bar .ant-input-affix-wrapper {
+  transition:
+    border-color var(--motion-duration-fast) ease,
+    background-color var(--motion-duration-fast) ease,
+    color var(--motion-duration-fast) ease,
+    transform var(--motion-duration-fast) var(--motion-ease-standard);
+}
+.compatibility-stat:active,
+.quality-stat:active,
+.metadata-status-chip:active { transform:scale(var(--motion-press-scale)); }
+@media (max-width:720px) { .operations-filter-bar { top:-16px; margin-inline:-16px; padding-inline:16px; } }

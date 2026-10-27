@@ -1,0 +1,21 @@
+# Combine with compose.yaml to delegate highlight jobs to a native worker.
+services:
+  media-wall:
+    environment:
+      MEDIA_WORKER_EXCLUDE_JOB_TYPES: highlight
+  highlight-worker:
+    image: ${HIGHLIGHT_WORKER_IMAGE:-alexandria-worker:arm64}
+    platform: ${HIGHLIGHT_WORKER_PLATFORM:-linux/arm64}
+    command: ["node", "dist/server/media-worker.js"]
+    environment:
+      DATA_DIR: /app/data
+      MEDIA_SOURCES: "LOCAL:Library=/media"
+      MEDIA_WORKER_JOB_TYPES: highlight
+      MEDIA_WORKER_EXCLUDE_JOB_TYPES: ""
+      MEDIA_WORKER_CONCURRENCY: "1"
+    volumes:
+      - "${ALEXANDRIA_MEDIA_DIR:-./media}:/media:ro"
+      - "${ALEXANDRIA_DATA_DIR:-./.local/docker-data}:/app/data"
+    depends_on:
+      - media-wall
+    restart: unless-stopped

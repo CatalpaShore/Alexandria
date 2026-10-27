@@ -1,0 +1,10 @@
+{
+  "purpose": "18+ 私有部署的最小文字元数据示例；不是公开 Demo 数据",
+  "verifiedAt": "2026-10-27",
+  "artwork": "原创程序生成的抽象示意图；不是作品封面或演员照片",
+  "items": [
+    { "code": "SSNI-190", "displayTitle": "作品档案 · SSNI-190", "actors": ["河北彩花"], "maker": "S1 NO.1 STYLE", "releaseDate": "2018-04-19", "source": "https://s1s1s1.com/works/detail/SSNI190" },
+    { "code": "SSIS-129", "displayTitle": "作品档案 · SSIS-129", "actors": ["河北彩花"], "maker": "S1 NO.1 STYLE", "releaseDate": "2021-07-19", "source": "https://s1s1s1.com/works/detail/SSIS129" },
+    { "code": "SSIS-158", "displayTitle": "作品档案 · SSIS-158", "actors": ["河北彩花"], "maker": "S1 NO.1 STYLE", "releaseDate": "2021-08-19", "source": "https://s1s1s1.com/works/detail/SSIS158" }
+  ]
+}

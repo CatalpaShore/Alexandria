@@ -1,0 +1,136 @@
+.playlist-picker-popover .ant-popover-inner {
+  width: min(330px, calc(100vw - 24px));
+  border: 1px solid #353535;
+  border-radius: 6px;
+  padding: 0;
+  background: #151515;
+  box-shadow: 0 14px 40px rgb(0 0 0 / 55%);
+}
+
+.playlist-picker {
+  display: grid;
+  color: var(--amw-text);
+}
+
+.playlist-picker > header,
+.playlist-picker > footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 11px;
+}
+
+.playlist-picker > header {
+  border-bottom: 1px solid var(--amw-border);
+}
+
+.playlist-picker > header > div {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+
+.playlist-picker > header strong {
+  color: var(--amw-text);
+  font-size: 13px;
+}
+
+.playlist-picker > header .ant-typography {
+  max-width: 230px;
+  color: var(--amw-muted);
+  font-size: 11px;
+}
+
+.playlist-picker > header .ant-tag {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.playlist-picker-list {
+  display: grid;
+  max-height: min(320px, 48vh);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.playlist-picker-list .ant-checkbox-wrapper {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: max-content minmax(0, 1fr);
+  align-items: center;
+  gap: 9px;
+  min-height: 48px;
+  margin: 0;
+  border-bottom: 1px solid #292929;
+  padding: 7px 11px;
+  color: var(--amw-text);
+}
+
+.playlist-picker-list .ant-checkbox-wrapper:last-child {
+  border-bottom: 0;
+}
+
+.playlist-picker-list .ant-checkbox-wrapper:hover,
+.playlist-picker-list .ant-checkbox-wrapper:has(.ant-checkbox-checked) {
+  background: rgb(255 153 0 / 8%);
+}
+
+.playlist-picker-list .ant-checkbox-wrapper > span:last-child {
+  min-width: 0;
+  padding-inline-start: 0;
+}
+
+.playlist-picker-option {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.playlist-picker-option > span:first-child {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+
+.playlist-picker-option strong,
+.playlist-picker-option small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.playlist-picker-option strong {
+  font-size: 12px;
+}
+
+.playlist-picker-option small {
+  color: var(--amw-muted);
+  font-size: 10px;
+}
+
+.playlist-picker-option .ant-tag {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.playlist-picker-state,
+.playlist-picker .ant-empty {
+  display: grid;
+  min-height: 112px;
+  place-items: center;
+  gap: 7px;
+  padding: 12px;
+}
+
+.playlist-picker .ant-empty-description {
+  color: var(--amw-muted);
+  font-size: 11px;
+}
+
+.playlist-picker > footer {
+  justify-content: flex-end;
+  border-top: 1px solid var(--amw-border);
+}

@@ -1,0 +1,89 @@
+.media-detail-drawer .detail-file-console {
+  display: grid;
+  gap: 14px;
+  padding: 14px;
+  border: 1px solid rgb(255 153 0 / 24%);
+  border-radius: 9px;
+  background: linear-gradient(145deg, rgb(255 153 0 / 7%), #111 42%);
+}
+
+.media-detail-drawer .detail-file-console-heading,
+.media-detail-drawer .detail-file-actions,
+.media-detail-drawer .detail-file-console-heading > div,
+.media-detail-drawer .detail-file-actions > div,
+.media-detail-drawer .detail-file-location {
+  display: flex;
+  align-items: center;
+}
+
+.media-detail-drawer .detail-file-console-heading,
+.media-detail-drawer .detail-file-actions {
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.media-detail-drawer .detail-file-console-heading > div,
+.media-detail-drawer .detail-file-actions > div,
+.media-detail-drawer .detail-file-location {
+  min-width: 0;
+}
+
+.media-detail-drawer .detail-file-console-heading > div,
+.media-detail-drawer .detail-file-actions > div {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.media-detail-drawer .detail-file-console-heading .ant-tag {
+  margin: 0;
+}
+
+.media-detail-drawer .detail-file-facts {
+  padding: 11px 12px 3px;
+  border: 1px solid #2c2c2c;
+  border-radius: 7px;
+  background: rgb(0 0 0 / 16%);
+}
+
+.media-detail-drawer .detail-file-location {
+  gap: 10px;
+  padding: 9px 11px;
+  border-left: 2px solid rgb(255 153 0 / 52%);
+  background: rgb(255 255 255 / 2%);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+}
+
+.media-detail-drawer .detail-file-location > :last-child {
+  min-width: 0;
+}
+
+.media-detail-drawer .detail-file-actions {
+  padding-top: 12px;
+  border-top: 1px solid #303030;
+}
+
+.media-detail-drawer .detail-file-actions .ant-btn {
+  min-height: 34px;
+}
+
+@media (max-width: 720px) {
+  .media-detail-drawer .detail-file-console-heading,
+  .media-detail-drawer .detail-file-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .media-detail-drawer .detail-file-actions .ant-space,
+  .media-detail-drawer .detail-file-actions .ant-space-item,
+  .media-detail-drawer .detail-file-actions .ant-btn {
+    width: 100%;
+  }
+
+  .media-detail-drawer .detail-file-location {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+  }
+}

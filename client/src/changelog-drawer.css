@@ -1,0 +1,226 @@
+.changelog-drawer .ant-drawer-body {
+  padding: 0;
+  overflow-x: hidden;
+  background: #0d0d0d;
+}
+
+.changelog-title {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 9px;
+}
+
+.changelog-title svg {
+  flex: 0 0 auto;
+  color: var(--amw-orange);
+}
+
+.changelog-title .ant-tag {
+  margin: 0 0 0 auto;
+  border-color: #5e430f;
+  background: #241b0c;
+  color: #f2ad29;
+}
+
+.changelog-intro {
+  display: grid;
+  gap: 3px;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--amw-border);
+  background: #111111;
+}
+
+.changelog-timeline {
+  padding: 4px 24px 28px;
+}
+
+.changelog-entry {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 12px;
+}
+
+.changelog-rail {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.changelog-dot {
+  position: relative;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  margin-top: 27px;
+  border: 2px solid #0d0d0d;
+  border-radius: 50%;
+  background: var(--amw-orange);
+  box-shadow: 0 0 0 2px #714600;
+}
+
+.changelog-entry.motion-list-item .changelog-dot {
+  animation: changelog-dot-enter var(--motion-duration-surface) var(--motion-ease-enter) both;
+}
+
+@keyframes changelog-dot-enter {
+  from { opacity: 0; transform: scale(.5); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.changelog-line {
+  position: absolute;
+  top: 37px;
+  bottom: -27px;
+  width: 1px;
+  background: linear-gradient(#684510, #282828);
+}
+
+.changelog-entry-content {
+  min-width: 0;
+  padding: 20px 0 24px;
+  border-bottom: 1px solid #262626;
+}
+
+.changelog-entry:last-child .changelog-entry-content {
+  border-bottom: 0;
+}
+
+.changelog-entry-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.changelog-entry-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin-bottom: 4px;
+}
+
+.changelog-date,
+.changelog-commit,
+.changelog-stats {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #d59625;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 750;
+}
+
+.changelog-commit {
+  color: #8f8f8f;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.changelog-stats {
+  gap: 5px;
+  color: #a8a8a8;
+}
+
+.changelog-additions {
+  color: #75d9ad;
+}
+
+.changelog-deletions {
+  color: #ef8b82;
+}
+
+.changelog-entry-heading h4.ant-typography {
+  margin: 0;
+  color: var(--amw-text);
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.changelog-latest.ant-tag {
+  flex: 0 0 auto;
+  margin: 2px 0 0;
+  border-color: #925d00;
+  background: var(--amw-orange);
+  color: #0b0b0b;
+  font-weight: 850;
+}
+
+.changelog-change-list {
+  display: grid;
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.changelog-change-list li {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  align-items: start;
+  gap: 9px;
+  color: #c9c9c9;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.changelog-type.ant-tag {
+  margin: 2px 0 0;
+  padding-inline: 5px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 20px;
+}
+
+.changelog-type.is-feature {
+  border-color: #8b5900;
+  background: #2c1e08;
+  color: #ffad1f;
+}
+
+.changelog-type.is-improvement {
+  border-color: #315f86;
+  background: #102333;
+  color: #80c4f4;
+}
+
+.changelog-type.is-fix {
+  border-color: #34715a;
+  background: #102b21;
+  color: #75d9ad;
+}
+
+@media (max-width: 640px) {
+  .changelog-drawer .ant-drawer-content-wrapper {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .changelog-intro {
+    padding: 14px 16px;
+  }
+
+  .changelog-timeline {
+    padding: 2px 16px 24px;
+  }
+
+  .changelog-entry {
+    grid-template-columns: 14px minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .changelog-entry-content {
+    padding-block: 17px 20px;
+  }
+
+  .changelog-entry-heading h4.ant-typography {
+    font-size: 16px;
+  }
+
+  .changelog-change-list li {
+    gap: 7px;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,4209 @@
+{
+  "scope": "production dependencies",
+  "packages": [
+    {
+      "name": "@ant-design/colors",
+      "versions": [
+        "8.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ant-design/ant-design-colors#readme",
+      "author": "afc163",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@ant-design/cssinjs",
+      "versions": [
+        "2.1.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ant-design/cssinjs",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@ant-design/cssinjs-utils",
+      "versions": [
+        "2.1.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ant-design/cssinjs-util",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@ant-design/fast-color",
+      "versions": [
+        "3.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ant-design/fast-color",
+      "author": "Guo Yunhe",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@ant-design/icons",
+      "versions": [
+        "6.3.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ant-design/ant-design-icons/tree/master#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@ant-design/icons-svg",
+      "versions": [
+        "4.5.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ant-design/ant-design-icons/",
+      "author": "",
+      "noticeFiles": []
+    },
+    {
+      "name": "@ant-design/react-slick",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://react-slick.neostack.com",
+      "author": "Kiran Abburi",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@babel/runtime",
+      "versions": [
+        "7.29.7"
+      ],
+      "license": "MIT",
+      "homepage": "https://babel.dev/docs/en/next/babel-runtime",
+      "author": "The Babel Team",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@emotion/hash",
+      "versions": [
+        "0.8.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/emotion-js/emotion/tree/master#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@emotion/unitless",
+      "versions": [
+        "0.7.5"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/emotion-js/emotion/tree/master#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@fast-csv/format",
+      "versions": [
+        "4.3.5"
+      ],
+      "license": "MIT",
+      "homepage": "http://c2fo.github.com/fast-csv/packages/format",
+      "author": "doug-martin",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@fast-csv/parse",
+      "versions": [
+        "4.3.6"
+      ],
+      "license": "MIT",
+      "homepage": "http://c2fo.github.com/fast-csv/packages/parse",
+      "author": "doug-martin",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@nodable/entities",
+      "versions": [
+        "3.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/nodable/val-parsers#readme",
+      "author": "Amit Gupta",
+      "noticeFiles": []
+    },
+    {
+      "name": "@rc-component/async-validator",
+      "versions": [
+        "6.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/async-validator",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/cascader",
+      "versions": [
+        "1.17.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/react-component/cascader",
+      "author": "afc163@gmail.com",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/checkbox",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://react-component.github.io/checkbox",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/collapse",
+      "versions": [
+        "1.2.0"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/collapse",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/color-picker",
+      "versions": [
+        "3.1.1"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/color-picker",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/context",
+      "versions": [
+        "2.0.2"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/context",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/dialog",
+      "versions": [
+        "1.10.0"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/dialog",
+      "author": "yiminghe@gmail.com",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/drawer",
+      "versions": [
+        "1.4.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/react-component/drawer",
+      "author": "155259966@qq.com",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@rc-component/dropdown",
+      "versions": [
+        "1.0.2"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/dropdown",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@rc-component/form",
+      "versions": [
+        "1.8.5"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/react-component/field-form",
+      "author": "smith3816@gmail.com",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@rc-component/image",
+      "versions": [
+        "1.9.0"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/image",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/input",
+      "versions": [
+        "1.3.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/react-component/input",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/input-number",
+      "versions": [
+        "1.6.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/react-component/input-number",
+      "author": "tsjxyz@gmail.com",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/mentions",
+      "versions": [
+        "1.10.0"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/mentions",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/menu",
+      "versions": [
+        "1.4.1"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/menu",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/mini-decimal",
+      "versions": [
+        "1.1.4"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/react-component/mini-decimal",
+      "author": "smith3816@gmail.com",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@rc-component/motion",
+      "versions": [
+        "1.3.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://react-component.github.io/motion",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/mutate-observer",
+      "versions": [
+        "2.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/react-component/mutate-observer",
+      "author": "574980606@qq.com",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@rc-component/notification",
+      "versions": [
+        "2.0.7"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/notification",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/overflow",
+      "versions": [
+        "1.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://react-component.github.io/overflow",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/pagination",
+      "versions": [
+        "1.4.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://react-component.github.io/pagination",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/picker",
+      "versions": [
+        "1.11.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://react-component.github.io/picker",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/portal",
+      "versions": [
+        "2.2.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/react-component/portal",
+      "author": "smith3816@gmail.com",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@rc-component/progress",
+      "versions": [
+        "1.0.2"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/progress",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/qrcode",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/react-component/qrcode",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@rc-component/rate",
+      "versions": [
+        "1.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/react-component/rate",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/resize-observer",
+      "versions": [
+        "1.1.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://react-component.github.io/resize-observer",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/segmented",
+      "versions": [
+        "1.3.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://react-component.github.io/segmented",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/select",
+      "versions": [
+        "1.8.2"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/select",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/slider",
+      "versions": [
+        "1.1.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://react-component.github.io/slider",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@rc-component/steps",
+      "versions": [
+        "1.2.2"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/steps",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/switch",
+      "versions": [
+        "1.0.3"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/switch",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/table",
+      "versions": [
+        "1.10.2"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/table",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/tabs",
+      "versions": [
+        "1.11.0"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/tabs",
+      "author": "yiminghe@gmail.com",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/tooltip",
+      "versions": [
+        "1.4.0"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/tooltip",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@rc-component/tour",
+      "versions": [
+        "2.4.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/react-component/tour",
+      "author": "wangning4567@163.com",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@rc-component/tree",
+      "versions": [
+        "1.3.2"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/tree",
+      "author": "smith3816@gmail.com",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/tree-select",
+      "versions": [
+        "1.11.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/react-component/tree-select",
+      "author": "smith3816@gmail.com",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@rc-component/trigger",
+      "versions": [
+        "3.9.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/react-component/trigger",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@rc-component/upload",
+      "versions": [
+        "1.1.1"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/upload",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@rc-component/util",
+      "versions": [
+        "1.11.1"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/react-component/util",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@rc-component/virtual-list",
+      "versions": [
+        "1.2.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/react-component/virtual-list",
+      "author": "smith3816@gmail.com",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@tanstack/query-core",
+      "versions": [
+        "5.101.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://tanstack.com/query",
+      "author": "tannerlinsley",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@tanstack/react-query",
+      "versions": [
+        "5.101.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://tanstack.com/query",
+      "author": "tannerlinsley",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@tanstack/react-virtual",
+      "versions": [
+        "3.14.5"
+      ],
+      "license": "MIT",
+      "homepage": "https://tanstack.com/virtual",
+      "author": "Tanner Linsley",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@tanstack/virtual-core",
+      "versions": [
+        "3.17.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://tanstack.com/virtual",
+      "author": "Tanner Linsley",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@types/debug",
+      "versions": [
+        "4.1.13"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/debug",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@types/estree",
+      "versions": [
+        "1.0.9"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/estree",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@types/estree-jsx",
+      "versions": [
+        "1.0.5"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/estree-jsx",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@types/hast",
+      "versions": [
+        "3.0.5"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/hast",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@types/mdast",
+      "versions": [
+        "4.0.4"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/mdast",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@types/ms",
+      "versions": [
+        "2.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ms",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@types/node",
+      "versions": [
+        "14.18.63"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@types/prop-types",
+      "versions": [
+        "15.7.15"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/prop-types",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@types/react",
+      "versions": [
+        "18.3.31"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@types/unist",
+      "versions": [
+        "2.0.11",
+        "3.0.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/unist",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@ungap/structured-clone",
+      "versions": [
+        "1.3.2"
+      ],
+      "license": "ISC",
+      "homepage": "https://github.com/ungap/structured-clone#readme",
+      "author": "Andrea Giammarchi",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "accepts",
+      "versions": [
+        "1.3.8"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/accepts#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "antd",
+      "versions": [
+        "6.5.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://ant.design",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "anynum",
+      "versions": [
+        "1.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/NaturalIntelligence/anynum#readme",
+      "author": "Amit Gupta",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "archiver",
+      "versions": [
+        "5.3.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/archiverjs/node-archiver",
+      "author": "Chris Talkington",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "archiver-utils",
+      "versions": [
+        "2.1.0",
+        "3.0.4"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/archiverjs/archiver-utils#readme",
+      "author": "Chris Talkington",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "array-flatten",
+      "versions": [
+        "1.1.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/blakeembrey/array-flatten",
+      "author": "Blake Embrey",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "async",
+      "versions": [
+        "3.2.6"
+      ],
+      "license": "MIT",
+      "homepage": "https://caolan.github.io/async/",
+      "author": "Caolan McMahon",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "bail",
+      "versions": [
+        "2.0.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/bail#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "balanced-match",
+      "versions": [
+        "1.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/juliangruber/balanced-match",
+      "author": "Julian Gruber",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "base64-js",
+      "versions": [
+        "1.5.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/beatgammit/base64-js",
+      "author": "T. Jameson Little",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "better-sqlite3",
+      "versions": [
+        "11.1.2"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/WiseLibs/better-sqlite3",
+      "author": "Joshua Wise",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "big-integer",
+      "versions": [
+        "1.6.52"
+      ],
+      "license": "Unlicense",
+      "homepage": "https://github.com/peterolson/BigInteger.js#readme",
+      "author": "Peter Olson",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "binary",
+      "versions": [
+        "0.3.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/substack/node-binary#readme",
+      "author": "James Halliday",
+      "noticeFiles": []
+    },
+    {
+      "name": "bindings",
+      "versions": [
+        "1.5.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/TooTallNate/node-bindings",
+      "author": "Nathan Rajlich",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "bl",
+      "versions": [
+        "4.0.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/rvagg/bl",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "bluebird",
+      "versions": [
+        "3.4.7"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/petkaantonov/bluebird",
+      "author": "Petka Antonov",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "body-parser",
+      "versions": [
+        "1.20.9"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/expressjs/body-parser#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "brace-expansion",
+      "versions": [
+        "1.1.21",
+        "2.1.7"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/juliangruber/brace-expansion",
+      "author": "Julian Gruber",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "buffer",
+      "versions": [
+        "5.7.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/feross/buffer",
+      "author": "Feross Aboukhadijeh",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "buffer-crc32",
+      "versions": [
+        "0.2.13"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/brianloveswords/buffer-crc32",
+      "author": "Brian J. Brennan",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "buffer-indexof-polyfill",
+      "versions": [
+        "1.0.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/sarosia/buffer-indexof-polyfill#readme",
+      "author": "https://github.com/sarosia",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "bytes",
+      "versions": [
+        "3.1.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/visionmedia/bytes.js#readme",
+      "author": "TJ Holowaychuk",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "call-bind-apply-helpers",
+      "versions": [
+        "1.0.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ljharb/call-bind-apply-helpers#readme",
+      "author": "Jordan Harband",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "call-bound",
+      "versions": [
+        "1.0.4"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ljharb/call-bound#readme",
+      "author": "Jordan Harband",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "ccount",
+      "versions": [
+        "2.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/ccount#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "chainsaw",
+      "versions": [
+        "0.1.0"
+      ],
+      "license": "MIT/X11",
+      "homepage": "https://github.com/substack/node-chainsaw#readme",
+      "author": "James Halliday",
+      "noticeFiles": []
+    },
+    {
+      "name": "character-entities",
+      "versions": [
+        "2.0.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/character-entities#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "character-entities-html4",
+      "versions": [
+        "2.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/character-entities-html4#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "character-entities-legacy",
+      "versions": [
+        "3.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/character-entities-legacy#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "character-reference-invalid",
+      "versions": [
+        "2.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/character-reference-invalid#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "chownr",
+      "versions": [
+        "1.1.4"
+      ],
+      "license": "ISC",
+      "homepage": "https://github.com/isaacs/chownr#readme",
+      "author": "Isaac Z. Schlueter",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "clsx",
+      "versions": [
+        "2.1.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/lukeed/clsx#readme",
+      "author": "Luke Edwards",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "comma-separated-tokens",
+      "versions": [
+        "2.0.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/comma-separated-tokens#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "compress-commons",
+      "versions": [
+        "4.1.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/archiverjs/node-compress-commons",
+      "author": "Chris Talkington",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "compressible",
+      "versions": [
+        "2.0.18"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/compressible#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "compression",
+      "versions": [
+        "1.8.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/expressjs/compression#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "compute-scroll-into-view",
+      "versions": [
+        "3.1.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://scroll-into-view.dev",
+      "author": "Cody Olsen",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "concat-map",
+      "versions": [
+        "0.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/substack/node-concat-map#readme",
+      "author": "James Halliday",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "content-disposition",
+      "versions": [
+        "0.5.4"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/content-disposition#readme",
+      "author": "Douglas Christopher Wilson",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "content-type",
+      "versions": [
+        "1.0.4",
+        "1.0.5"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/content-type#readme",
+      "author": "Douglas Christopher Wilson",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "cookie",
+      "versions": [
+        "0.7.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/cookie#readme",
+      "author": "Roman Shtylman",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "cookie-signature",
+      "versions": [
+        "1.0.7"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/visionmedia/node-cookie-signature#readme",
+      "author": "TJ Holowaychuk",
+      "noticeFiles": []
+    },
+    {
+      "name": "core-util-is",
+      "versions": [
+        "1.0.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/isaacs/core-util-is#readme",
+      "author": "Isaac Z. Schlueter",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "crc-32",
+      "versions": [
+        "1.2.2"
+      ],
+      "license": "Apache-2.0",
+      "homepage": "https://sheetjs.com/",
+      "author": "sheetjs",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "crc32-stream",
+      "versions": [
+        "4.0.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/archiverjs/node-crc32-stream",
+      "author": "Chris Talkington",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "csstype",
+      "versions": [
+        "3.2.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/frenic/csstype#readme",
+      "author": "Fredrik Nicol",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "date-fns",
+      "versions": [
+        "2.30.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/date-fns/date-fns#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "dayjs",
+      "versions": [
+        "1.11.21"
+      ],
+      "license": "MIT",
+      "homepage": "https://day.js.org",
+      "author": "iamkun",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "debug",
+      "versions": [
+        "2.6.9",
+        "4.4.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/debug-js/debug#readme",
+      "author": "Josh Junon",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "decode-named-character-reference",
+      "versions": [
+        "1.3.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/decode-named-character-reference#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "decompress-response",
+      "versions": [
+        "6.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/sindresorhus/decompress-response#readme",
+      "author": "Sindre Sorhus",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "deep-extend",
+      "versions": [
+        "0.6.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/unclechu/node-deep-extend",
+      "author": "Viacheslav Lotsmanov",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "depd",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/dougwilson/nodejs-depd#readme",
+      "author": "Douglas Christopher Wilson",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "dequal",
+      "versions": [
+        "2.0.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/lukeed/dequal#readme",
+      "author": "Luke Edwards",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "destroy",
+      "versions": [
+        "1.2.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/stream-utils/destroy#readme",
+      "author": "Jonathan Ong",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "detect-libc",
+      "versions": [
+        "2.1.2"
+      ],
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/lovell/detect-libc#readme",
+      "author": "Lovell Fuller",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "devlop",
+      "versions": [
+        "1.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/devlop#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "dunder-proto",
+      "versions": [
+        "1.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/es-shims/dunder-proto#readme",
+      "author": "Jordan Harband",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "duplexer2",
+      "versions": [
+        "0.1.4"
+      ],
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/deoxxa/duplexer2#readme",
+      "author": "Conrad Pankoff",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "ee-first",
+      "versions": [
+        "1.1.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jonathanong/ee-first#readme",
+      "author": "Jonathan Ong",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "encodeurl",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/pillarjs/encodeurl#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "end-of-stream",
+      "versions": [
+        "1.4.5"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/mafintosh/end-of-stream",
+      "author": "Mathias Buus",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "es-define-property",
+      "versions": [
+        "1.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ljharb/es-define-property#readme",
+      "author": "Jordan Harband",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "es-errors",
+      "versions": [
+        "1.3.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ljharb/es-errors#readme",
+      "author": "Jordan Harband",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "es-object-atoms",
+      "versions": [
+        "1.1.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ljharb/es-object-atoms#readme",
+      "author": "Jordan Harband",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "escape-html",
+      "versions": [
+        "1.0.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/component/escape-html#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "escape-string-regexp",
+      "versions": [
+        "5.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/sindresorhus/escape-string-regexp#readme",
+      "author": "Sindre Sorhus",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "estree-util-is-identifier-name",
+      "versions": [
+        "3.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/estree-util-is-identifier-name#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "etag",
+      "versions": [
+        "1.8.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/etag#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "exceljs",
+      "versions": [
+        "4.4.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/exceljs/exceljs#readme",
+      "author": "Guyon Roche",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "expand-template",
+      "versions": [
+        "2.0.3"
+      ],
+      "license": "(MIT OR WTFPL)",
+      "homepage": "https://github.com/ralphtheninja/expand-template",
+      "author": "LM",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "express",
+      "versions": [
+        "4.22.2"
+      ],
+      "license": "MIT",
+      "homepage": "http://expressjs.com/",
+      "author": "TJ Holowaychuk",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "fast-csv",
+      "versions": [
+        "4.3.6"
+      ],
+      "license": "MIT",
+      "homepage": "http://c2fo.github.com/fast-csv",
+      "author": "Doug Martin",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "fast-xml-builder",
+      "versions": [
+        "1.3.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/NaturalIntelligence/fast-xml-builder#readme",
+      "author": "Amit Gupta",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "fast-xml-parser",
+      "versions": [
+        "5.11.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/NaturalIntelligence/fast-xml-parser#readme",
+      "author": "Amit Gupta",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "file-uri-to-path",
+      "versions": [
+        "1.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/TooTallNate/file-uri-to-path",
+      "author": "Nathan Rajlich",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "finalhandler",
+      "versions": [
+        "1.3.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/pillarjs/finalhandler#readme",
+      "author": "Douglas Christopher Wilson",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "forwarded",
+      "versions": [
+        "0.2.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/forwarded#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "fresh",
+      "versions": [
+        "0.5.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/fresh#readme",
+      "author": "TJ Holowaychuk",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "fs-constants",
+      "versions": [
+        "1.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/mafintosh/fs-constants",
+      "author": "Mathias Buus",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "fs.realpath",
+      "versions": [
+        "1.0.0"
+      ],
+      "license": "ISC",
+      "homepage": "https://github.com/isaacs/fs.realpath#readme",
+      "author": "Isaac Z. Schlueter",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "fstream",
+      "versions": [
+        "1.0.12"
+      ],
+      "license": "ISC",
+      "homepage": "https://github.com/npm/fstream#readme",
+      "author": "Isaac Z. Schlueter",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "function-bind",
+      "versions": [
+        "1.1.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/Raynos/function-bind",
+      "author": "Raynos",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "get-intrinsic",
+      "versions": [
+        "1.3.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ljharb/get-intrinsic#readme",
+      "author": "Jordan Harband",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "get-proto",
+      "versions": [
+        "1.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ljharb/get-proto#readme",
+      "author": "Jordan Harband",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "github-from-package",
+      "versions": [
+        "0.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/substack/github-from-package",
+      "author": "James Halliday",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "glob",
+      "versions": [
+        "7.2.0",
+        "7.2.3"
+      ],
+      "license": "ISC",
+      "homepage": "https://github.com/isaacs/node-glob#readme",
+      "author": "Isaac Z. Schlueter",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "gopd",
+      "versions": [
+        "1.2.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ljharb/gopd#readme",
+      "author": "Jordan Harband",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "graceful-fs",
+      "versions": [
+        "4.2.11"
+      ],
+      "license": "ISC",
+      "homepage": "https://github.com/isaacs/node-graceful-fs#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "gsap",
+      "versions": [
+        "3.15.0"
+      ],
+      "license": "Standard 'no charge' license: https://gsap.com/standard-license.",
+      "homepage": "https://gsap.com",
+      "author": "",
+      "noticeFiles": []
+    },
+    {
+      "name": "has-symbols",
+      "versions": [
+        "1.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ljharb/has-symbols#readme",
+      "author": "Jordan Harband",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "hasown",
+      "versions": [
+        "2.0.4"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/inspect-js/hasOwn#readme",
+      "author": "Jordan Harband",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "hast-util-to-jsx-runtime",
+      "versions": [
+        "2.3.6"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/hast-util-to-jsx-runtime#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "hast-util-whitespace",
+      "versions": [
+        "3.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/hast-util-whitespace#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "helmet",
+      "versions": [
+        "7.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://helmetjs.github.io/",
+      "author": "Adam Baldwin",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "hls.js",
+      "versions": [
+        "1.6.16"
+      ],
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/video-dev/hls.js",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "html-url-attributes",
+      "versions": [
+        "3.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/rehypejs/rehype-minify/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "http-errors",
+      "versions": [
+        "2.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/http-errors#readme",
+      "author": "Jonathan Ong",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "iconv-lite",
+      "versions": [
+        "0.4.24"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ashtuchkin/iconv-lite",
+      "author": "Alexander Shtuchkin",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "ieee754",
+      "versions": [
+        "1.2.1"
+      ],
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/feross/ieee754#readme",
+      "author": "Feross Aboukhadijeh",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "immediate",
+      "versions": [
+        "3.0.6"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/calvinmetcalf/immediate#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.txt"
+      ]
+    },
+    {
+      "name": "inflight",
+      "versions": [
+        "1.0.6"
+      ],
+      "license": "ISC",
+      "homepage": "https://github.com/isaacs/inflight",
+      "author": "Isaac Z. Schlueter",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "inherits",
+      "versions": [
+        "2.0.4"
+      ],
+      "license": "ISC",
+      "homepage": "https://github.com/isaacs/inherits#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "ini",
+      "versions": [
+        "1.3.8"
+      ],
+      "license": "ISC",
+      "homepage": "https://github.com/isaacs/ini#readme",
+      "author": "Isaac Z. Schlueter",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "inline-style-parser",
+      "versions": [
+        "0.1.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/remarkablemark/inline-style-parser#readme",
+      "author": "",
+      "noticeFiles": []
+    },
+    {
+      "name": "ipaddr.js",
+      "versions": [
+        "1.9.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/whitequark/ipaddr.js#readme",
+      "author": "whitequark",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "is-alphabetical",
+      "versions": [
+        "2.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/is-alphabetical#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "is-alphanumerical",
+      "versions": [
+        "2.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/is-alphanumerical#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "is-decimal",
+      "versions": [
+        "2.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/is-decimal#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "is-hexadecimal",
+      "versions": [
+        "2.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/is-hexadecimal#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "is-mobile",
+      "versions": [
+        "5.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/juliangruber/is-mobile",
+      "author": "Julian Gruber",
+      "noticeFiles": []
+    },
+    {
+      "name": "is-plain-obj",
+      "versions": [
+        "4.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/sindresorhus/is-plain-obj#readme",
+      "author": "Sindre Sorhus",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "is-unsafe",
+      "versions": [
+        "2.0.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/NaturalIntelligence/is-unsafe#readme",
+      "author": "Amit Gupta",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "isarray",
+      "versions": [
+        "1.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/juliangruber/isarray",
+      "author": "Julian Gruber",
+      "noticeFiles": []
+    },
+    {
+      "name": "js-tokens",
+      "versions": [
+        "3.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/lydell/js-tokens#readme",
+      "author": "Simon Lydell",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "json2mq",
+      "versions": [
+        "0.2.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/akiran/json2mq",
+      "author": "Kiran Abburi",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "jszip",
+      "versions": [
+        "3.10.1"
+      ],
+      "license": "(MIT OR GPL-3.0-or-later)",
+      "homepage": "https://github.com/Stuk/jszip#readme",
+      "author": "Stuart Knightley",
+      "noticeFiles": [
+        "LICENSE.markdown"
+      ]
+    },
+    {
+      "name": "lazystream",
+      "versions": [
+        "1.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jpommerening/node-lazystream",
+      "author": "Jonas Pommerening",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "lie",
+      "versions": [
+        "3.3.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/calvinmetcalf/lie#readme",
+      "author": "",
+      "noticeFiles": [
+        "license.md"
+      ]
+    },
+    {
+      "name": "listenercount",
+      "versions": [
+        "1.0.1"
+      ],
+      "license": "ISC",
+      "homepage": "https://github.com/jden/node-listenercount#readme",
+      "author": "jden",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "lodash.defaults",
+      "versions": [
+        "4.2.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://lodash.com/",
+      "author": "John-David Dalton",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "lodash.difference",
+      "versions": [
+        "4.5.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://lodash.com/",
+      "author": "John-David Dalton",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "lodash.escaperegexp",
+      "versions": [
+        "4.1.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://lodash.com/",
+      "author": "John-David Dalton",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "lodash.flatten",
+      "versions": [
+        "4.4.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://lodash.com/",
+      "author": "John-David Dalton",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "lodash.groupby",
+      "versions": [
+        "4.6.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://lodash.com/",
+      "author": "John-David Dalton",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "lodash.isboolean",
+      "versions": [
+        "3.0.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://lodash.com/",
+      "author": "John-David Dalton",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "lodash.isequal",
+      "versions": [
+        "4.5.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://lodash.com/",
+      "author": "John-David Dalton",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "lodash.isfunction",
+      "versions": [
+        "3.0.9"
+      ],
+      "license": "MIT",
+      "homepage": "https://lodash.com/",
+      "author": "John-David Dalton",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "lodash.isnil",
+      "versions": [
+        "4.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://lodash.com/",
+      "author": "John-David Dalton",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "lodash.isplainobject",
+      "versions": [
+        "4.0.6"
+      ],
+      "license": "MIT",
+      "homepage": "https://lodash.com/",
+      "author": "John-David Dalton",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "lodash.isundefined",
+      "versions": [
+        "3.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://lodash.com/",
+      "author": "John-David Dalton",
+      "noticeFiles": [
+        "LICENSE.txt"
+      ]
+    },
+    {
+      "name": "lodash.union",
+      "versions": [
+        "4.6.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://lodash.com/",
+      "author": "John-David Dalton",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "lodash.uniq",
+      "versions": [
+        "4.5.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://lodash.com/",
+      "author": "John-David Dalton",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "longest-streak",
+      "versions": [
+        "3.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/longest-streak#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "loose-envify",
+      "versions": [
+        "1.4.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/zertosh/loose-envify",
+      "author": "Andres Suarez",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "lucide-react",
+      "versions": [
+        "0.468.0"
+      ],
+      "license": "ISC",
+      "homepage": "https://lucide.dev",
+      "author": "Eric Fennis",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "markdown-table",
+      "versions": [
+        "3.0.4"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/markdown-table#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "math-intrinsics",
+      "versions": [
+        "1.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/es-shims/math-intrinsics#readme",
+      "author": "Jordan Harband",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "mdast-util-find-and-replace",
+      "versions": [
+        "3.0.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/mdast-util-find-and-replace#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "mdast-util-from-markdown",
+      "versions": [
+        "2.0.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/mdast-util-from-markdown#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "mdast-util-gfm",
+      "versions": [
+        "3.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/mdast-util-gfm#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "mdast-util-gfm-autolink-literal",
+      "versions": [
+        "2.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/mdast-util-gfm-autolink-literal#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "mdast-util-gfm-footnote",
+      "versions": [
+        "2.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/mdast-util-gfm-footnote#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "mdast-util-gfm-strikethrough",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/mdast-util-gfm-strikethrough#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "mdast-util-gfm-table",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/mdast-util-gfm-table#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "mdast-util-gfm-task-list-item",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/mdast-util-gfm-task-list-item#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "mdast-util-mdx-expression",
+      "versions": [
+        "2.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/mdast-util-mdx-expression#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "mdast-util-mdx-jsx",
+      "versions": [
+        "3.2.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/mdast-util-mdx-jsx#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "mdast-util-mdxjs-esm",
+      "versions": [
+        "2.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/mdast-util-mdxjs-esm#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "mdast-util-phrasing",
+      "versions": [
+        "4.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/mdast-util-phrasing#readme",
+      "author": "Victor Felder",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "mdast-util-to-hast",
+      "versions": [
+        "13.2.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/mdast-util-to-hast#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "mdast-util-to-markdown",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/mdast-util-to-markdown#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "mdast-util-to-string",
+      "versions": [
+        "4.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/mdast-util-to-string#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "media-typer",
+      "versions": [
+        "0.3.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/media-typer#readme",
+      "author": "Douglas Christopher Wilson",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "merge-descriptors",
+      "versions": [
+        "1.0.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/sindresorhus/merge-descriptors#readme",
+      "author": "Jonathan Ong",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "methods",
+      "versions": [
+        "1.1.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/methods#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "micromark",
+      "versions": [
+        "4.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-core-commonmark",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-extension-gfm",
+      "versions": [
+        "3.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark-extension-gfm#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "micromark-extension-gfm-autolink-literal",
+      "versions": [
+        "2.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark-extension-gfm-autolink-literal#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "micromark-extension-gfm-footnote",
+      "versions": [
+        "2.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark-extension-gfm-footnote#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "micromark-extension-gfm-strikethrough",
+      "versions": [
+        "2.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark-extension-gfm-strikethrough#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "micromark-extension-gfm-table",
+      "versions": [
+        "2.1.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark-extension-gfm-table#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "micromark-extension-gfm-tagfilter",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark-extension-gfm-tagfilter#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "micromark-extension-gfm-task-list-item",
+      "versions": [
+        "2.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark-extension-gfm-task-list-item#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "micromark-factory-destination",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-factory-label",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-factory-space",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-factory-title",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-factory-whitespace",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-util-character",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-util-chunked",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-util-classify-character",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-util-combine-extensions",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-util-decode-numeric-character-reference",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-util-decode-string",
+      "versions": [
+        "2.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "micromark-util-encode",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-util-html-tag-name",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-util-normalize-identifier",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-util-resolve-all",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-util-sanitize-uri",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-util-subtokenize",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-util-symbol",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "micromark-util-types",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/micromark/micromark/tree/main#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": []
+    },
+    {
+      "name": "mime",
+      "versions": [
+        "1.6.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/broofa/node-mime#readme",
+      "author": "Robert Kieffer",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "mime-db",
+      "versions": [
+        "1.40.0",
+        "1.51.0",
+        "1.54.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/mime-db#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "mime-types",
+      "versions": [
+        "2.1.24",
+        "2.1.34"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/mime-types#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "mimic-response",
+      "versions": [
+        "3.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/sindresorhus/mimic-response#readme",
+      "author": "Sindre Sorhus",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "minimatch",
+      "versions": [
+        "3.1.5",
+        "5.1.9"
+      ],
+      "license": "ISC",
+      "homepage": "https://github.com/isaacs/minimatch#readme",
+      "author": "Isaac Z. Schlueter",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "minimist",
+      "versions": [
+        "1.2.8"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/minimistjs/minimist",
+      "author": "James Halliday",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "mkdirp",
+      "versions": [
+        "0.5.6"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/substack/node-mkdirp#readme",
+      "author": "James Halliday",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "mkdirp-classic",
+      "versions": [
+        "0.5.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/mafintosh/mkdirp-classic",
+      "author": "Mathias Buus",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "ms",
+      "versions": [
+        "2.0.0",
+        "2.1.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/vercel/ms#readme",
+      "author": "",
+      "noticeFiles": [
+        "license.md"
+      ]
+    },
+    {
+      "name": "napi-build-utils",
+      "versions": [
+        "2.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/inspiredware/napi-build-utils#readme",
+      "author": "Jim Schlight",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "negotiator",
+      "versions": [
+        "0.6.3",
+        "0.6.4"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/negotiator#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "node-abi",
+      "versions": [
+        "3.94.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/electron/node-abi#readme",
+      "author": "Lukas Geiger",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "node-buffers",
+      "versions": [
+        "0.1.1"
+      ],
+      "license": "MIT/X11",
+      "homepage": "https://github.com/dashevo/node-buffers#readme",
+      "author": "James Halliday",
+      "noticeFiles": []
+    },
+    {
+      "name": "normalize-path",
+      "versions": [
+        "3.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jonschlinkert/normalize-path",
+      "author": "Jon Schlinkert",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "object-inspect",
+      "versions": [
+        "1.13.4"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/inspect-js/object-inspect",
+      "author": "James Halliday",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "on-finished",
+      "versions": [
+        "2.4.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/on-finished#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "on-headers",
+      "versions": [
+        "1.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/on-headers#readme",
+      "author": "Douglas Christopher Wilson",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "once",
+      "versions": [
+        "1.4.0"
+      ],
+      "license": "ISC",
+      "homepage": "https://github.com/isaacs/once#readme",
+      "author": "Isaac Z. Schlueter",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "pako",
+      "versions": [
+        "1.0.11"
+      ],
+      "license": "(MIT AND Zlib)",
+      "homepage": "https://github.com/nodeca/pako",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "parse-entities",
+      "versions": [
+        "4.0.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/parse-entities#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "parseurl",
+      "versions": [
+        "1.3.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/pillarjs/parseurl#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "path-expression-matcher",
+      "versions": [
+        "1.6.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/NaturalIntelligence/path-expression-matcher#readme",
+      "author": "Amit Gupta",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "path-is-absolute",
+      "versions": [
+        "1.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/sindresorhus/path-is-absolute#readme",
+      "author": "Sindre Sorhus",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "path-to-regexp",
+      "versions": [
+        "0.1.13"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/pillarjs/path-to-regexp#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "prebuild-install",
+      "versions": [
+        "7.1.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/prebuild/prebuild-install",
+      "author": "Mathias Buus",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "process-nextick-args",
+      "versions": [
+        "2.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/calvinmetcalf/process-nextick-args",
+      "author": "",
+      "noticeFiles": [
+        "license.md"
+      ]
+    },
+    {
+      "name": "property-information",
+      "versions": [
+        "7.2.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/property-information#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "proxy-addr",
+      "versions": [
+        "2.0.8"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/proxy-addr#readme",
+      "author": "Douglas Christopher Wilson",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "pump",
+      "versions": [
+        "3.0.4"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/mafintosh/pump#readme",
+      "author": "Mathias Buus Madsen",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "qs",
+      "versions": [
+        "6.16.0"
+      ],
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/ljharb/qs",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "range-parser",
+      "versions": [
+        "1.2.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/range-parser#readme",
+      "author": "TJ Holowaychuk",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "raw-body",
+      "versions": [
+        "2.5.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/stream-utils/raw-body#readme",
+      "author": "Jonathan Ong",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "rc",
+      "versions": [
+        "1.2.8"
+      ],
+      "license": "(BSD-2-Clause OR MIT OR Apache-2.0)",
+      "homepage": "https://github.com/dominictarr/rc#readme",
+      "author": "Dominic Tarr",
+      "noticeFiles": [
+        "LICENSE.APACHE2",
+        "LICENSE.BSD",
+        "LICENSE.MIT"
+      ]
+    },
+    {
+      "name": "react",
+      "versions": [
+        "18.3.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://reactjs.org/",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "react-dom",
+      "versions": [
+        "18.3.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://reactjs.org/",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "react-is",
+      "versions": [
+        "18.3.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://reactjs.org/",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "react-markdown",
+      "versions": [
+        "10.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/remarkjs/react-markdown#readme",
+      "author": "Espen Hovlandsdal",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "readable-stream",
+      "versions": [
+        "2.3.8",
+        "3.6.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/nodejs/readable-stream#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "readdir-glob",
+      "versions": [
+        "1.1.3"
+      ],
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/Yqnn/node-readdir-glob",
+      "author": "Yann Armelin",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "remark-gfm",
+      "versions": [
+        "4.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/remarkjs/remark-gfm#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "remark-parse",
+      "versions": [
+        "11.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://remark.js.org",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "remark-rehype",
+      "versions": [
+        "11.1.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/remarkjs/remark-rehype#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "remark-stringify",
+      "versions": [
+        "11.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://remark.js.org",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "rimraf",
+      "versions": [
+        "2.7.1"
+      ],
+      "license": "ISC",
+      "homepage": "https://github.com/isaacs/rimraf#readme",
+      "author": "Isaac Z. Schlueter",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "safe-buffer",
+      "versions": [
+        "5.1.2",
+        "5.2.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/feross/safe-buffer",
+      "author": "Feross Aboukhadijeh",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "safer-buffer",
+      "versions": [
+        "2.1.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ChALkeR/safer-buffer#readme",
+      "author": "Nikita Skovoroda",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "saxes",
+      "versions": [
+        "5.0.1"
+      ],
+      "license": "ISC",
+      "homepage": "https://github.com/lddubeau/saxes#readme",
+      "author": "Louis-Dominique Dubeau",
+      "noticeFiles": []
+    },
+    {
+      "name": "scheduler",
+      "versions": [
+        "0.23.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://reactjs.org/",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "scroll-into-view-if-needed",
+      "versions": [
+        "3.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://scroll-into-view.dev",
+      "author": "Cody Olsen",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "semver",
+      "versions": [
+        "7.8.5"
+      ],
+      "license": "ISC",
+      "homepage": "https://github.com/npm/node-semver#readme",
+      "author": "GitHub Inc.",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "send",
+      "versions": [
+        "0.19.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/pillarjs/send#readme",
+      "author": "TJ Holowaychuk",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "serve-static",
+      "versions": [
+        "1.16.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/expressjs/serve-static#readme",
+      "author": "Douglas Christopher Wilson",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "setimmediate",
+      "versions": [
+        "1.0.5"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/YuzuJS/setImmediate#readme",
+      "author": "YuzuJS",
+      "noticeFiles": [
+        "LICENSE.txt"
+      ]
+    },
+    {
+      "name": "setprototypeof",
+      "versions": [
+        "1.2.0"
+      ],
+      "license": "ISC",
+      "homepage": "https://github.com/wesleytodd/setprototypeof",
+      "author": "Wes Todd",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "side-channel",
+      "versions": [
+        "1.1.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ljharb/side-channel#readme",
+      "author": "Jordan Harband",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "side-channel-list",
+      "versions": [
+        "1.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ljharb/side-channel-list#readme",
+      "author": "Jordan Harband",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "side-channel-map",
+      "versions": [
+        "1.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ljharb/side-channel-map#readme",
+      "author": "Jordan Harband",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "side-channel-weakmap",
+      "versions": [
+        "1.0.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ljharb/side-channel-weakmap#readme",
+      "author": "Jordan Harband",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "simple-concat",
+      "versions": [
+        "1.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/feross/simple-concat",
+      "author": "Feross Aboukhadijeh",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "simple-get",
+      "versions": [
+        "4.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/feross/simple-get",
+      "author": "Feross Aboukhadijeh",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "space-separated-tokens",
+      "versions": [
+        "2.0.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/space-separated-tokens#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "statuses",
+      "versions": [
+        "2.0.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/statuses#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "string_decoder",
+      "versions": [
+        "1.1.1",
+        "1.3.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/nodejs/string_decoder",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "string-convert",
+      "versions": [
+        "0.2.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/akiran/string-convert#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "stringify-entities",
+      "versions": [
+        "4.0.4"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/stringify-entities#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "strip-json-comments",
+      "versions": [
+        "2.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/sindresorhus/strip-json-comments#readme",
+      "author": "Sindre Sorhus",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "strnum",
+      "versions": [
+        "2.5.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/NaturalIntelligence/strnum#readme",
+      "author": "Amit Gupta",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "style-to-js",
+      "versions": [
+        "1.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/remarkablemark/style-to-js#readme",
+      "author": "Mark",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "style-to-object",
+      "versions": [
+        "0.3.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/remarkablemark/style-to-object#readme",
+      "author": "Mark",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "stylis",
+      "versions": [
+        "4.4.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/thysultan/stylis.js",
+      "author": "Sultan Tarimo",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "tar-fs",
+      "versions": [
+        "2.1.5"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/mafintosh/tar-fs",
+      "author": "Mathias Buus",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "tar-stream",
+      "versions": [
+        "2.1.4",
+        "2.2.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/mafintosh/tar-stream",
+      "author": "Mathias Buus",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "throttle-debounce",
+      "versions": [
+        "5.0.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/niksy/throttle-debounce#readme",
+      "author": "Ivan Nikolić",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "tmp",
+      "versions": [
+        "0.2.7"
+      ],
+      "license": "MIT",
+      "homepage": "http://github.com/raszi/node-tmp",
+      "author": "KARASZI István",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "toidentifier",
+      "versions": [
+        "1.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/component/toidentifier#readme",
+      "author": "Douglas Christopher Wilson",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "traverse",
+      "versions": [
+        "0.3.9"
+      ],
+      "license": "MIT/X11",
+      "homepage": "https://github.com/substack/js-traverse#readme",
+      "author": "James Halliday",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "trim-lines",
+      "versions": [
+        "3.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/trim-lines#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "trough",
+      "versions": [
+        "2.2.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/trough#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "tunnel-agent",
+      "versions": [
+        "0.6.0"
+      ],
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/mikeal/tunnel-agent#readme",
+      "author": "Mikeal Rogers",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "type-is",
+      "versions": [
+        "1.6.18"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/type-is#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "unified",
+      "versions": [
+        "11.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://unifiedjs.com",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "unist-util-is",
+      "versions": [
+        "6.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/unist-util-is#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "unist-util-position",
+      "versions": [
+        "5.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/unist-util-position#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "unist-util-stringify-position",
+      "versions": [
+        "4.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/unist-util-stringify-position#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "unist-util-visit",
+      "versions": [
+        "5.1.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/unist-util-visit#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "unist-util-visit-parents",
+      "versions": [
+        "6.0.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/syntax-tree/unist-util-visit-parents#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "unpipe",
+      "versions": [
+        "1.0.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/stream-utils/unpipe#readme",
+      "author": "Douglas Christopher Wilson",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "unzipper",
+      "versions": [
+        "0.10.14"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/ZJONSSON/node-unzipper#readme",
+      "author": "Evan Oxfeld",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "util-deprecate",
+      "versions": [
+        "1.0.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/TooTallNate/util-deprecate",
+      "author": "Nathan Rajlich",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "utils-merge",
+      "versions": [
+        "1.0.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jaredhanson/utils-merge#readme",
+      "author": "Jared Hanson",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "uuid",
+      "versions": [
+        "11.1.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/uuidjs/uuid#readme",
+      "author": "",
+      "noticeFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "vary",
+      "versions": [
+        "1.1.2"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/jshttp/vary#readme",
+      "author": "Douglas Christopher Wilson",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "vfile",
+      "versions": [
+        "6.0.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/vfile/vfile#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "vfile-message",
+      "versions": [
+        "4.0.3"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/vfile/vfile-message#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "wrappy",
+      "versions": [
+        "1.0.2"
+      ],
+      "license": "ISC",
+      "homepage": "https://github.com/npm/wrappy",
+      "author": "Isaac Z. Schlueter",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "xml-naming",
+      "versions": [
+        "0.3.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/NaturalIntelligence/xml-naming#readme",
+      "author": "Amit Gupta",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "xmlchars",
+      "versions": [
+        "2.2.0"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/lddubeau/xmlchars#readme",
+      "author": "Louis-Dominique Dubeau",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "zip-stream",
+      "versions": [
+        "4.1.1"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/archiverjs/node-zip-stream",
+      "author": "Chris Talkington",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "zod",
+      "versions": [
+        "4.6.7"
+      ],
+      "license": "MIT",
+      "homepage": "https://zod.dev",
+      "author": "Colin McDonnell",
+      "noticeFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "zwitch",
+      "versions": [
+        "2.0.4"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/wooorm/zwitch#readme",
+      "author": "Titus Wormer",
+      "noticeFiles": [
+        "license"
+      ]
+    }
+  ]
+}

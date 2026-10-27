@@ -1,0 +1,138 @@
+.operations-overview {
+  border-color: #573c12;
+  background: #17130d;
+}
+
+.operations-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid #303030;
+  border-radius: 6px;
+  background: #151515;
+}
+
+.operations-stat-grid .ant-statistic {
+  min-width: 0;
+  padding: 10px 12px;
+  border-right: 1px solid #303030;
+  border-bottom: 1px solid #303030;
+}
+
+.operations-stat-grid .ant-statistic:nth-child(2n) {
+  border-right: 0;
+}
+
+.operations-stat-grid .ant-statistic:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+
+.operations-stat-grid .ant-statistic-title,
+.operations-maintenance-stats .ant-statistic-title {
+  color: #a6a6a6;
+  font-size: 12px;
+}
+
+.operations-stat-grid .ant-statistic-content,
+.operations-maintenance-stats .ant-statistic-content {
+  color: #ffb32c;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.operations-alert-list {
+  display: grid;
+  gap: 7px;
+}
+
+.operations-alert-list .ant-alert {
+  padding-block: 6px;
+  border-radius: 6px;
+}
+
+.operations-alert-list .ant-alert-message,
+.operations-alert-list .ant-alert-title {
+  color: #f0f0f0;
+  font-size: 12px;
+}
+
+.operations-route-list {
+  display: grid;
+  gap: 2px;
+}
+
+.operations-route-row {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  align-items: center;
+  gap: 12px;
+  padding: 7px 0;
+  border-bottom: 1px solid #242424;
+}
+
+.operations-route-row:last-child {
+  border-bottom: 0;
+}
+
+.operations-diagnostics-alert {
+  border-radius: 6px;
+}
+
+.operations-maintenance-pane {
+  padding-bottom: 6px;
+}
+
+.operations-status-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 34px;
+  padding: 7px 10px;
+  border-left: 3px solid #ff9900;
+  background: #1d1811;
+}
+
+.operations-maintenance-stats .ant-statistic-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.operations-report-card {
+  padding: 14px;
+  border: 1px solid #303030;
+  border-radius: 6px;
+  background: #1b1b1b;
+}
+
+.operations-report-card .ant-descriptions-item-label {
+  color: #9f9f9f;
+}
+
+.operations-report-card .ant-descriptions-item-content {
+  color: #f0f0f0;
+}
+
+.operations-report-card .ant-list-item {
+  padding-inline: 0;
+}
+
+.operations-report-card .ant-empty {
+  margin-block: 18px 8px;
+}
+
+@media (max-width: 720px) {
+  .operations-maintenance-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .operations-route-row {
+    gap: 8px;
+  }
+
+  .operations-report-card {
+    padding: 12px;
+  }
+}

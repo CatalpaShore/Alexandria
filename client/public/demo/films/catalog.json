@@ -1,0 +1,343 @@
+{
+  "version": 2,
+  "playback": "Generated 12-second compatibility clips, not the original films.",
+  "films": [
+    {
+      "slug": "big-buck-bunny",
+      "title": "Big Buck Bunny · 大雄兔",
+      "year": 2008,
+      "director": "Sacha Goedegebure",
+      "actors": [],
+      "tags": [
+        "动画",
+        "喜剧",
+        "森林"
+      ],
+      "collection": "开放电影精选",
+      "summary": "森林里的大兔子与几位爱捣蛋的邻居，展开一段充满反差的动画故事。",
+      "source": "https://studio.blender.org/projects/big-buck-bunny/",
+      "credits": "https://studio.blender.org/projects/big-buck-bunny/pages/credits/",
+      "studio": "Blender Studio",
+      "artwork": {
+        "file": "big-buck-bunny.png",
+        "originalUrl": "https://studio.blender.org/files/public/thumbnail/92/96/9296b1255fff3ef0e25da43f70616349_m.webp",
+        "sha256": "518a20e829df88d87c5c90d9960974c8880d46e57f5c63689be20242fac906c4",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "licenseSource": "https://peach.blender.org/about/",
+        "attribution": "© copyright 2008, Blender Foundation / www.bigbuckbunny.org",
+        "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+      }
+    },
+    {
+      "slug": "sintel",
+      "title": "Sintel · 辛特尔",
+      "year": 2010,
+      "director": "Colin Levy",
+      "actors": [
+        "Halina Reijn",
+        "Thom Hoffman"
+      ],
+      "tags": [
+        "动画",
+        "奇幻",
+        "冒险"
+      ],
+      "collection": "奇幻与远行",
+      "summary": "一位年轻旅人踏上寻找小龙的旅程，在陌生的土地上追寻失去的伙伴。",
+      "source": "https://studio.blender.org/projects/sintel/",
+      "credits": "https://studio.blender.org/projects/sintel/pages/credits/",
+      "studio": "Blender Studio",
+      "artwork": {
+        "file": "sintel.png",
+        "originalUrl": "https://studio.blender.org/files/public/thumbnail/03/f7/03f7b0d15c55b428680d4c6bb313f742_m.webp",
+        "sha256": "429b9bcc291634c4924f137a3c163125edf4a0d37048df0e0cffeda576f978cd",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "licenseSource": "https://durian.blender.org/sharing/",
+        "attribution": "© copyright Blender Foundation | www.sintel.org",
+        "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+      }
+    },
+    {
+      "slug": "spring",
+      "title": "Spring · 春",
+      "year": 2019,
+      "director": "Andy Goralczyk",
+      "actors": [],
+      "tags": [
+        "动画",
+        "奇幻",
+        "自然"
+      ],
+      "collection": "奇幻与远行",
+      "summary": "牧羊女孩与她的狗走入古老山林，迎接季节与生命循环的变化。",
+      "source": "https://studio.blender.org/projects/spring/",
+      "credits": "https://studio.blender.org/projects/spring/pages/credits/",
+      "studio": "Blender Studio",
+      "artwork": {
+        "file": "spring.png",
+        "originalUrl": "https://studio.blender.org/files/public/thumbnail/ea/65/ea65feaacf95911f39844e2ea97e68b5_m.webp",
+        "sha256": "9ff411400cf664303ad137b826bea1cf3f636da3fa16cef8c390b02c7c90496a",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://studio.blender.org/projects/spring/pages/about/",
+        "attribution": "© Blender Foundation | cloud.blender.org/spring",
+        "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+      }
+    },
+    {
+      "slug": "wing-it",
+      "title": "Wing It!",
+      "year": 2023,
+      "director": "Rik Schutte",
+      "actors": [],
+      "tags": [
+        "动画",
+        "喜剧",
+        "冒险"
+      ],
+      "collection": "轻松一刻",
+      "summary": "一位严谨的工程师和热情的访客，被卷入一场失控的飞行实验。",
+      "source": "https://studio.blender.org/projects/wing-it/",
+      "credits": "https://studio.blender.org/projects/wing-it/pages/credits/",
+      "studio": "Blender Studio",
+      "artwork": {
+        "file": "wing-it.png",
+        "originalUrl": "https://studio.blender.org/files/public/thumbnail/c2/6d/c26d3b56aeb6bc9bf1ba6ee8e27b7ccd_m.webp",
+        "sha256": "8b36c92c5db9b0ea6c5f6dbba20fc84d06eff6a84610f1f32e0a8351379bb95d",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://studio.blender.org/projects/wing-it/pages/licensing/",
+        "attribution": "© Blender Foundation | studio.blender.org",
+        "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+      }
+    },
+    {
+      "slug": "charge",
+      "title": "Charge",
+      "year": 2022,
+      "director": "Hjalti Hjálmarsson",
+      "actors": [],
+      "tags": [
+        "动画",
+        "科幻",
+        "动作"
+      ],
+      "collection": "未来与想象",
+      "summary": "能源短缺的未来，一位老人闯入电池工厂，与守卫机器展开周旋。",
+      "source": "https://studio.blender.org/projects/charge/",
+      "credits": "https://studio.blender.org/projects/charge/pages/credits/",
+      "studio": "Blender Studio",
+      "artwork": {
+        "file": "charge.png",
+        "originalUrl": "https://studio.blender.org/files/public/thumbnail/ae/13/ae134adfbfa91160947451873ab09c6d_m.webp",
+        "sha256": "2e6630bc0c07054cd8129293fb4e54a09256dc6b9bfdb9722c08f33bfb29a842",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://studio.blender.org/terms-and-conditions/",
+        "attribution": "© Blender Foundation | studio.blender.org",
+        "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+      }
+    },
+    {
+      "slug": "coffee-run",
+      "title": "Coffee Run",
+      "year": 2020,
+      "director": "Hjalti Hjálmarsson",
+      "actors": [],
+      "tags": [
+        "动画",
+        "生活",
+        "爱情"
+      ],
+      "collection": "生活与艺术",
+      "summary": "咖啡与奔跑串起一段关系中的片刻记忆，呈现生活的甜与苦。",
+      "source": "https://studio.blender.org/projects/coffee-run/",
+      "credits": "https://studio.blender.org/projects/coffee-run/pages/credits/",
+      "studio": "Blender Studio",
+      "artwork": {
+        "file": "coffee-run.png",
+        "originalUrl": "https://studio.blender.org/files/public/thumbnail/7a/43/7a43fa6b0bc44e62f1cbb21473800e07_m.webp",
+        "sha256": "ceaeda92bfa08762ba6cd19667feb4145faf40142c2499ebd33c3139717063ef",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://studio.blender.org/projects/coffee-run/pages/licensing/",
+        "attribution": "© Blender Foundation | studio.blender.org",
+        "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+      }
+    },
+    {
+      "slug": "glass-half",
+      "title": "Glass Half",
+      "year": 2015,
+      "director": "Beorn Leonard",
+      "actors": [
+        "Ryan Millar",
+        "Trista Mrema",
+        "Hjalti Hjálmarsson"
+      ],
+      "tags": [
+        "动画",
+        "喜剧",
+        "艺术"
+      ],
+      "collection": "生活与艺术",
+      "summary": "两位参观者在画廊中争论艺术，让不同视角碰撞出幽默。",
+      "source": "https://studio.blender.org/projects/glass-half/",
+      "credits": "https://studio.blender.org/projects/glass-half/pages/credits/",
+      "studio": "Blender Studio",
+      "artwork": {
+        "file": "glass-half.png",
+        "originalUrl": "https://studio.blender.org/files/public/thumbnail/ca/e4/cae4b30a27c3a0fe21d494d20b4fce83_m.webp",
+        "sha256": "aab3042369c1da2ed78260981d9fb32fe4039a5ea00da5c3cfb197b4ff82beb1",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "licenseSource": "https://studio.blender.org/projects/glass-half/pages/licensing/",
+        "attribution": "© Blender Foundation | studio.blender.org",
+        "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+      }
+    },
+    {
+      "slug": "caminandes-3",
+      "title": "Caminandes: Llamigos",
+      "year": 2016,
+      "director": "Pablo Vazquez",
+      "actors": [],
+      "tags": [
+        "动画",
+        "喜剧",
+        "自然"
+      ],
+      "collection": "Caminandes",
+      "summary": "雪地中的羊驼与另一位小伙伴，为一颗美味果实展开较量。",
+      "source": "https://studio.blender.org/projects/caminandes-3/",
+      "credits": "https://studio.blender.org/projects/caminandes-3/pages/credits/",
+      "studio": "Blender Studio",
+      "artwork": {
+        "file": "caminandes-3.png",
+        "originalUrl": "https://studio.blender.org/files/public/thumbnail/6e/84/6e84fd08dda59d66aeb2152cb879f160_m.webp",
+        "sha256": "a36b27cb22f1c057064edb209ba54340a03476de69976bcfc5bf1b958e6927e8",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://studio.blender.org/terms-and-conditions/",
+        "attribution": "© Blender Foundation | studio.blender.org",
+        "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+      }
+    },
+    {
+      "slug": "caminandes-2",
+      "title": "Caminandes: Gran Dillama",
+      "year": 2013,
+      "director": "Pablo Vazquez",
+      "actors": [],
+      "tags": [
+        "动画",
+        "喜剧",
+        "自然"
+      ],
+      "collection": "Caminandes",
+      "summary": "一只羊驼面对草地边的围栏，用意想不到的方式寻找出路。",
+      "source": "https://studio.blender.org/projects/caminandes-2/",
+      "credits": "https://studio.blender.org/projects/caminandes-2/pages/credits/",
+      "studio": "Blender Studio",
+      "artwork": {
+        "file": "caminandes-2.png",
+        "originalUrl": "https://studio.blender.org/files/public/thumbnail/80/4b/804beb324d82e98db44d8308d9e6f495_m.webp",
+        "sha256": "a2e8da23ed6c81a3b2ff32d79eec9d2ee6ad6ab0e2961f0020f4cbe330ceb220",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://studio.blender.org/terms-and-conditions/",
+        "attribution": "© Blender Foundation | studio.blender.org",
+        "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+      }
+    },
+    {
+      "slug": "hero",
+      "title": "Hero",
+      "year": 2018,
+      "director": "Daniel Martinez Lara",
+      "actors": [],
+      "tags": [
+        "动画",
+        "冒险",
+        "艺术"
+      ],
+      "collection": "开放电影精选",
+      "summary": "以手绘风格与迅速变化的场景，展示二维动画的想象力。",
+      "source": "https://studio.blender.org/projects/hero/",
+      "credits": "https://studio.blender.org/projects/hero/pages/credits/",
+      "studio": "Blender Studio",
+      "artwork": {
+        "file": "hero.png",
+        "originalUrl": "https://studio.blender.org/files/public/thumbnail/d7/ee/d7ee634f13f6adacfaaf8e1017148bdc_m.webp",
+        "sha256": "996da90259a5a9bee6d6a702b5d3d3786dfe0c92708a30efefac4bc513d4e9f2",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://studio.blender.org/terms-and-conditions/",
+        "attribution": "© Blender Foundation | studio.blender.org",
+        "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+      }
+    },
+    {
+      "slug": "elephants-dream",
+      "title": "Elephants Dream",
+      "year": 2006,
+      "director": "Bassam Kurdali",
+      "actors": [
+        "Cas Jansen",
+        "Tygo Gernandt"
+      ],
+      "tags": [
+        "动画",
+        "科幻",
+        "实验"
+      ],
+      "collection": "未来与想象",
+      "summary": "两名旅人穿行于复杂的机械世界，对周围现实有着不同的理解。",
+      "source": "https://studio.blender.org/projects/elephants-dream/",
+      "credits": "https://studio.blender.org/projects/elephants-dream/pages/credits/",
+      "studio": "Blender Studio",
+      "artwork": {
+        "file": "elephants-dream.png",
+        "originalUrl": "https://studio.blender.org/files/public/thumbnail/04/77/0477dfea1d88a94ba1a75f99f433b8f6_m.webp",
+        "sha256": "8b25e3807959dc80dffa96d65645d35862931ad3d1d2209184e8f353ddd78d77",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://studio.blender.org/terms-and-conditions/",
+        "attribution": "© Blender Foundation | studio.blender.org",
+        "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+      }
+    },
+    {
+      "slug": "cosmos-laundromat",
+      "title": "Cosmos Laundromat: First Cycle",
+      "year": 2015,
+      "director": "Mathieu Auvray",
+      "actors": [
+        "Pierre Bokma",
+        "Reinout Scholten van Aschat"
+      ],
+      "tags": [
+        "动画",
+        "奇幻",
+        "冒险"
+      ],
+      "collection": "奇幻与远行",
+      "summary": "一只羊与一位神秘来客相遇，平凡海岛被卷入奇异的新世界。",
+      "source": "https://studio.blender.org/projects/cosmos-laundromat/",
+      "credits": "https://studio.blender.org/projects/cosmos-laundromat/pages/credits/",
+      "studio": "Blender Studio",
+      "artwork": {
+        "file": "cosmos-laundromat.png",
+        "originalUrl": "https://studio.blender.org/files/public/thumbnail/75/54/7554352c0ec78a8540a8e5f3b3671927_m.webp",
+        "sha256": "98aa2c92b85441d10f9baa95993ea69938a14343c2109bfaa34669fc27469476",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "licenseSource": "https://studio.blender.org/terms-and-conditions/",
+        "attribution": "© Blender Foundation | studio.blender.org",
+        "changes": "Resized to 960 px wide and converted to PNG; no retouching."
+      }
+    }
+  ]
+}

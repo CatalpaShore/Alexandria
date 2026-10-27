@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Alexandria 18+</string>
+    <string name="nas_address">NAS 服务地址</string>
+    <string name="nas_address_hint">例如 http://192.168.1.20:3000</string>
+    <string name="connect">连接</string>
+    <string name="auto_discover">自动发现局域网服务</string>
+    <string name="settings">连接设置</string>
+    <string name="retry">重试</string>
+</resources>

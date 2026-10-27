@@ -1,0 +1,39 @@
+plugins {
+    id "com.android.application"
+}
+
+def versionProperties = new Properties()
+def versionPropertiesFile = rootProject.file("version.properties")
+if (!versionPropertiesFile.exists()) {
+    throw new GradleException("Missing android/version.properties")
+}
+versionPropertiesFile.withInputStream { versionProperties.load(it) }
+
+android {
+    namespace "org.alexandria.publicmediawall"
+    compileSdk 35
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    defaultConfig {
+        applicationId "org.alexandria.publicmediawall"
+        minSdk 26
+        targetSdk 35
+        versionCode versionProperties.getProperty("VERSION_CODE").toInteger()
+        versionName versionProperties.getProperty("VERSION_NAME")
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}

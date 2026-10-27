@@ -1,0 +1,25 @@
+[
+  {
+    "id": "opensource-legacy",
+    "date": "2026-10-27",
+    "commit": "local",
+    "subject": "保留原版功能的开源版本",
+    "title": "保留原版功能的开源版本",
+    "stats": {
+      "files": 0,
+      "additions": 0,
+      "deletions": 0,
+      "total": 0
+    },
+    "changes": [
+      {
+        "type": "优化",
+        "text": "沿用原版媒体墙、播放器、专题、收藏、记录和管理功能。"
+      },
+      {
+        "type": "优化",
+        "text": "移除 AI 创作工坊、私人资料与个人环境配置。"
+      }
+    ]
+  }
+]

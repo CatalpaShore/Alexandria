@@ -1,0 +1,68 @@
+name: Non-adult demo · GitHub Pages
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'client/**'
+      - 'server/**'
+      - 'demo/online/**'
+      - 'scripts/**'
+      - 'tests/online-demo/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
+      - '*config*'
+      - '.github/workflows/demo-pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Install build tools
+        run: |
+          corepack enable
+          # Use the official HTTPS archive; avoid optional GPU driver packages.
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/apt-mirrors.txt
+          fi
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 update
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 install -y --no-install-recommends ffmpeg
+          pnpm install --frozen-lockfile
+      - name: Build isolated non-adult artifact
+        env:
+          DEMO_BASE_PATH: /${{ github.event.repository.name }}/
+        run: pnpm demo:online:build
+      - name: Test browser API and publication boundary
+        run: node --test tests/online-demo/api.test.mjs
+      - name: Test interactive browser demo
+        run: |
+          pnpm exec playwright install --with-deps chromium
+          pnpm exec playwright test --config playwright.online.config.ts
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: .local/online-demo/site
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

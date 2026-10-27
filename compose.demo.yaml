@@ -1,0 +1,17 @@
+name: alexandria-demo
+services:
+  demo:
+    build: .
+    image: alexandria-public:local
+    command: ["node", "scripts/start-demo.mjs"]
+    ports:
+      - "127.0.0.1:${ALEXANDRIA_DEMO_PORT:-4312}:3000"
+    environment:
+      PORT: "3000"
+      AMW_DEMO_MODE: "true"
+      AMW_LAN_MODE: "true"
+      AMW_HOST: "0.0.0.0"
+    # Intentionally no media or data mounts: only reviewed non-adult artwork and generated test clips.
+    tmpfs:
+      - /app/.local:uid=1000,gid=1000,mode=0700
+    restart: unless-stopped

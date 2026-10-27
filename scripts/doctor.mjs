@@ -1,0 +1,12 @@
+import fs from "node:fs/promises";
+import { checkTools, readEnvironment } from "./lib/setupLibrary.mjs";
+const checks = checkTools();
+checks.push({ name: "Installed dependencies / 已安装依赖 / 依存関係", ok: await fs.access("node_modules/tsx").then(() => true).catch(() => false) });
+console.log("Alexandria 18+ · Environment check / 环境检查 / 環境確認");
+for (const check of checks) console.log(`${check.ok ? "✓" : "✗"} ${check.name}`);
+console.log((await fs.access("dist/server/index.js").then(() => true).catch(() => false) ? "✓" : "○") + " Production build / 生产构建 / ビルド — pnpm build");
+const env = await readEnvironment(process.cwd());
+console.log(`URL: http://127.0.0.1:${env.PORT || "4310"}`);
+console.log("Next / 下一步 / 次の手順: pnpm setup:library --help");
+console.log("Guide / 指南 / ガイド: docs/GETTING_STARTED.md");
+process.exitCode = checks.every(check => check.ok) ? 0 : 1;
