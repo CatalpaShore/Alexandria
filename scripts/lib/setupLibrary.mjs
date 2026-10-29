@@ -32,7 +32,7 @@ export async function inspectSource(input) {
       if (++checked > 300) break;
       if (item.isDirectory()) queue.push(path.join(dir.path, item.name));
       if (!item.isFile()) continue;
-      if (/\.(mp4|mkv|mov|avi|webm|wmv|m4v|mpg|mpeg|ts)$/i.test(item.name)) video++;
+      if (/\.(mp4|mkv|mov|avi|webm|wmv|m4v|mpg|mpeg|flv|ts|m2ts)$/i.test(item.name)) video++;
       if (/\.(srt|ass|ssa|vtt)$/i.test(item.name)) subtitles++;
       if (/\.nfo$|\.media\.json$/i.test(item.name)) metadata++;
     }

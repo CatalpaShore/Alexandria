@@ -471,7 +471,11 @@ export function App() {
 
   const statusText = useLocalizedMemo(() => {
     if (metadataStatus.data?.running) return t("正在补全元数据");
-    if (scan.isPending || libraryOverview.data?.scanning) return t("正在扫描");
+    if (scan.isPending || libraryOverview.data?.scanning) {
+      const progress = libraryOverview.data?.scanProgress;
+      if (progress?.phase === "fingerprinting") return t("正在校验文件指纹 {{p0}} / {{p1}}", { p0: progress.completed.toLocaleString(getIntlLocale()), p1: progress.total.toLocaleString(getIntlLocale()) });
+      return t("正在扫描");
+    }
     if (libraryOverview.data?.latestScan) {
       return t("上次扫描 {{p0}} 个", { p0: libraryOverview.data.latestScan.indexed.toLocaleString(getIntlLocale()) });
     }

@@ -1,5 +1,11 @@
 # 既存のフォルダから始める
 
+画面のプレビューは最大 300 件を抽出し、動画・字幕・資料の数を表示します。全件のスキャン結果ではありません。新規の空ライブラリでは、ファイル全体の指紋確認が終わる前にローカル資料と字幕を利用できます。既存ライブラリでは従来の慎重な移行照合を維持します。
+
+同名字幕は動画と同じフォルダーのほか、`Subs` または `Subtitles` サブフォルダーにも配置できます（例：`Subs/Sample-001.zh-Hant.srt`）。同名の複数バージョンなど判別できない場合は自動で関連付けません。
+
+WebDAV などのリモートストレージは、[rclone](https://rclone.org/commands/rclone_mount/) などでサービスの実行環境にマウントし、そのローカルパスを登録できます。`myremote` を設定して空のマウント先を作成した後、例として `rclone mount myremote: /absolute/path/to/mount --read-only` を実行します。プロセスを維持し、読み取り権限を確認してください。Docker では起動前にホストから読み取り専用でバインドします。これはネイティブ接続ではなく、シークや接続状態はストレージとマウントに依存します。初回の全ファイル指紋計算は通信量が大きくなるため、認証情報をリポジトリに保存しないでください。
+
 続けて[機能ガイド](USER_GUIDE.ja.md)・[再生](USER_GUIDE.ja.md#playback)・[字幕](USER_GUIDE.ja.md#subtitles)・[ドキュメント](README.ja.md)を参照してください。
 
 [简体中文](GETTING_STARTED.md) · [English](GETTING_STARTED.en.md) · [日本語](GETTING_STARTED.ja.md)

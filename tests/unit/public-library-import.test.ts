@@ -23,6 +23,43 @@ beforeEach(async()=>{
 afterAll(async()=>{db.close();await fs.rm(root,{recursive:true,force:true})});
 
 describe("public local-library compatibility",()=>{
+ it("makes a new library's metadata and subtitles available before full-file hashing",async()=>{
+  await fs.writeFile(path.join(mediaRoot,"Example.mp4"),"neutral-video-fixture");
+  await fs.writeFile(path.join(mediaRoot,"Example.nfo"),"<movie><title>Example title</title></movie>");
+  await fs.writeFile(path.join(mediaRoot,"Example.en.srt"),"1\n00:00:00,000 --> 00:00:01,000\nHello\n");
+  const phases:string[]=[]; let visibleBeforeHash=false;
+  await scanMediaLibrary({forceFull:true,onProgress:progress=>phases.push(progress.phase),onInitialReady:()=>{
+   visibleBeforeHash=Boolean(db.prepare("SELECT 1 FROM media_metadata WHERE title='Example title'").get()) &&
+     Boolean(db.prepare("SELECT 1 FROM media_sidecars WHERE language='en'").get()) &&
+     (db.prepare("SELECT COUNT(*) n FROM library_file_identity").get() as {n:number}).n===0;
+  }});
+  expect(visibleBeforeHash).toBe(true);
+  expect(phases).toContain("fingerprinting");
+  expect(db.prepare("SELECT COUNT(*) n FROM library_file_identity").get()).toEqual({n:1});
+ });
+ it("associates language subtitles with the right directory and common Subs folders",async()=>{
+  const one=path.join(mediaRoot,"one"),two=path.join(mediaRoot,"two");
+  await fs.mkdir(path.join(one,"Subs"),{recursive:true});await fs.mkdir(two,{recursive:true});
+  await fs.writeFile(path.join(one,"AAA-101 first.mp4"),"first-video");
+  await fs.writeFile(path.join(two,"AAA-101 second.mp4"),"second-video");
+  await fs.writeFile(path.join(one,"Subs","AAA-101 first.zh-Hant.srt"),"subtitle");
+  await fs.writeFile(path.join(two,"AAA-101 second.zh-CN.srt"),"subtitle");
+  await scanMediaLibrary({forceFull:true});
+  expect(db.prepare(`SELECT m.name, s.language FROM media_sidecars s JOIN media_files m ON m.id=s.media_id WHERE s.kind='subtitle' ORDER BY m.name`).all()).toEqual([
+   {name:"AAA-101 first.mp4",language:"zh-TW"},{name:"AAA-101 second.mp4",language:"zh-CN"}
+  ]);
+ });
+ it("keeps distinct source identities when categories share a name and root",async()=>{
+  await fs.writeFile(path.join(mediaRoot,"Example.mp4"),"fixture");
+  process.env.MEDIA_SOURCES=`FIRST:Library=${mediaRoot};SECOND:Library=${mediaRoot}`;
+  await scanMediaLibrary({forceFull:true});
+  const rows=db.prepare("SELECT id,library_category FROM media_files ORDER BY library_category").all() as Array<{id:string;library_category:string}>;
+  expect(rows.map(row=>row.library_category)).toEqual(["FIRST","SECOND"]);
+  expect(new Set(rows.map(row=>row.id)).size).toBe(2);
+  const original=rows.map(row=>row.id);
+  await scanMediaLibrary({forceFull:true});
+  expect((db.prepare("SELECT id FROM media_files ORDER BY library_category").all() as Array<{id:string}>).map(row=>row.id)).toEqual(original);
+ });
  it("imports NFO then per-field JSON, leaves artwork out of the wall and source bytes unchanged",async()=>{
   const video=path.join(mediaRoot,"Holiday.mp4"),nfo=path.join(mediaRoot,"Holiday.nfo");
   await fs.writeFile(video,"neutral-video-fixture");await fs.writeFile(nfo,'<movie><title>NFO title</title><plot>Local plot</plot><actor><name>Demo Person</name></actor><genre>Travel</genre><set><name>Holidays</name></set><year>2024</year></movie>');

@@ -1,4 +1,9 @@
 {
+  "抽样 {{p0}} 项：视频 {{p1}}、字幕 {{p2}}、资料 {{p3}}": "Sampled {{p0}} entries: {{p1}} videos, {{p2}} subtitles, {{p3}} metadata files",
+  "仅抽样，非完整结果": "Sample only, not a full inventory",
+  "部分子目录不可读取，请检查权限": "Some subfolders could not be read; check permissions",
+  "抽样未发现视频，请确认路径；完整扫描会继续检查子目录。": "No videos found in the sample. Check the path; the full scan continues through subfolders.",
+  "正在校验文件指纹 {{p0}} / {{p1}}": "Checking file fingerprints {{p0}} / {{p1}}",
   "界面语言": "Interface language",
   "接入媒体库": "Connect library",
   "接入已有媒体库": "Connect an existing library",

@@ -26,7 +26,7 @@ import { registerLibraryAnalyticsRoutes } from "./libraryAnalyticsRoutes.js";
 import { registerPlaylistRoutes } from "./playlistRoutes.js";
 import { clearProductRouteCaches, registerProductRoutes, warmProductRouteCaches } from "./productRoutes.js";
 import { registerEntityProfileImageRoutes } from "./entityProfileImageCache.js";
-import { scanMediaLibrary, type ScanOptions, type ScanSummary } from "./scanner.js";
+import { scanMediaLibrary, type ScanOptions, type ScanProgress, type ScanSummary } from "./scanner.js";
 import { createSearchDomain } from "./searchDomain.js";
 import { registerSearchRoutes } from "./searchRoutes.js";
 import { refreshMetadataQualityIssues } from "./metadataQuality.js";
@@ -39,10 +39,12 @@ import { registerGovernanceActionRoutes } from "./governanceActionRoutes.js";
 
 let activeScan: Promise<ScanSummary> | null = null;
 let latestScan: ScanSummary | null = null;
+let scanProgress: ScanProgress | null = null;
 
 const searchDomain = createSearchDomain({
   isScanActive: () => Boolean(activeScan),
-  getLatestScan: () => latestScan
+  getLatestScan: () => latestScan,
+  getScanProgress: () => scanProgress
 });
 const mediaDomain = createMediaDomain();
 const cacheWarmup = createCacheWarmup({
@@ -66,7 +68,16 @@ function clearPlaybackResponseCaches(): void {
 export function startScan(options: ScanOptions = {}): Promise<ScanSummary> {
   if (!activeScan) {
     clearResponseCaches();
-    activeScan = scanMediaLibrary(options)
+    activeScan = scanMediaLibrary({
+      ...options,
+      onProgress: (progress) => { scanProgress = progress; options.onProgress?.(progress); },
+      onInitialReady: () => {
+        rebuildMediaSearchIndex();
+        enqueuePendingProbeJobs(500);
+        clearResponseCaches();
+        options.onInitialReady?.();
+      }
+    })
       .then((summary) => {
         latestScan = summary;
         if (summary.changed > 0 || summary.removed > 0) {
@@ -90,6 +101,7 @@ export function startScan(options: ScanOptions = {}): Promise<ScanSummary> {
       })
       .finally(() => {
         activeScan = null;
+        scanProgress = null;
         cacheWarmup.start("scan-complete");
       });
   }

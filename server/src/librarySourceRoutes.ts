@@ -5,6 +5,7 @@ import type { Express } from "express";
 import { z } from "zod";
 import { config, getMediaSources } from "./config.js";
 import { db } from "./db.js";
+import { sampleLibrarySource } from "./librarySourceSample.js";
 
 const label = z.string().trim().min(1).max(80).regex(/^[^/\\:\r\n\0]+$/);
 const sourcesSchema = z.array(z.object({category:label,name:label,root:z.string().trim().refine(path.isAbsolute,"Use an absolute mounted directory")})).min(1).max(32).superRefine((sources,context) => {
@@ -33,7 +34,8 @@ export function registerLibrarySourceRoutes(app:Express, startScan:()=>Promise<u
       if(previews.size>=64)previews.delete(previews.keys().next().value!);
       previews.set(previewId,{fingerprint:fingerprint({targets,current}),expires:Date.now()+600000});
       const retained=(db.prepare("SELECT COUNT(*) AS count FROM media_files").get() as {count:number}).count;
-      res.json({previewId,sources,targets,retainedRecords:retained,policy:"Keep existing media IDs and user records; read sources without moving or renaming files."});
+      const sampledTargets = await Promise.all(targets.map(async target => ({ ...target, sample: target.readable ? await sampleLibrarySource(target.root) : null })));
+      res.json({previewId,sources,targets:sampledTargets,retainedRecords:retained,policy:"Keep existing media IDs and user records; read sources without moving or renaming files."});
     } catch(error){next(error)}
   });
   app.put("/api/settings/library-sources",async(req,res,next)=>{

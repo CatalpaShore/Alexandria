@@ -47,7 +47,8 @@ try {
   fs.unlinkSync(path.join(nested, "ABC-123.mp4"));
   const deleted = await scanMediaLibrary();
   assert.equal(deleted.indexed, 1);
-  assert.equal(deleted.removed, 1);
+  assert.equal(deleted.removed, 0);
+  assert.equal(db.prepare("SELECT available FROM library_availability WHERE media_id=(SELECT id FROM media_files WHERE name=?)").get("ABC-123.mp4").available, 0);
 
   fs.writeFileSync(path.join(sourceTwo, "NEW-001.mp4"), "replacement source");
   process.env.MEDIA_SOURCES = `JAV:Fixture=${sourceTwo}`;
@@ -55,9 +56,10 @@ try {
   assert.equal(sourceChanged.scanMode, "full");
   assert.equal(sourceChanged.fullScanReason, "source-configuration-changed");
   assert.equal(sourceChanged.indexed, 1);
-  assert.equal(sourceChanged.removed, 1);
-  const current = db.prepare("SELECT absolute_path AS absolutePath FROM media_files").all();
-  assert.deepEqual(current, [{ absolutePath: path.join(sourceTwo, "NEW-001.mp4") }]);
+  assert.equal(sourceChanged.removed, 0);
+  const current = db.prepare("SELECT absolute_path AS absolutePath FROM media_files ORDER BY absolute_path").all();
+  const preserved = [path.join(nested, "ABC-123.mp4"), path.join(nested, "XYZ-999.mp4"), path.join(sourceTwo, "NEW-001.mp4")].sort().map(absolutePath => ({ absolutePath }));
+  assert.deepEqual(current, preserved);
 
   const forced = await scanMediaLibrary({ forceFull: true });
   assert.equal(forced.scanMode, "full");
@@ -75,24 +77,24 @@ try {
 
   process.env.MEDIA_SOURCES = `JAV:Fixture=${path.join(root, "unmounted-source")}`;
   await assert.rejects(scanMediaLibrary());
-  const afterUnavailableSource = db.prepare("SELECT absolute_path AS absolutePath FROM media_files").all();
-  assert.deepEqual(afterUnavailableSource, [{ absolutePath: path.join(sourceTwo, "NEW-001.mp4") }]);
+  const afterUnavailableSource = db.prepare("SELECT absolute_path AS absolutePath FROM media_files ORDER BY absolute_path").all();
+  assert.deepEqual(afterUnavailableSource, preserved);
 
   process.env.MEDIA_SOURCES = `JAV:Fixture=${sourceTwo};JAV:Offline=${path.join(root, "unmounted-source")}`;
   const partial = await scanMediaLibrary();
   assert.equal(partial.indexed, 1);
   assert.equal(partial.snapshotSaved, false);
   assert.equal(partial.roots.find((entry) => entry.name === "JAV:Offline")?.state, "missing");
-  const afterPartialScan = db.prepare("SELECT absolute_path AS absolutePath FROM media_files").all();
-  assert.deepEqual(afterPartialScan, [{ absolutePath: path.join(sourceTwo, "NEW-001.mp4") }]);
+  const afterPartialScan = db.prepare("SELECT absolute_path AS absolutePath FROM media_files ORDER BY absolute_path").all();
+  assert.deepEqual(afterPartialScan, preserved);
 
   console.log(JSON.stringify({
     ok: true,
     initialMode: initial.scanMode,
     skippedDirectories: incremental.directoriesSkipped,
     modificationDetected: modified.changed,
-    deletionDetected: deleted.removed,
-    sourceChangeCleanup: sourceChanged.removed,
+    missingRecordsPreserved: deleted.removed === 0,
+    sourceChangePreserved: sourceChanged.removed === 0,
     forcedValidation: forced.fullScanReason,
     periodicValidation: periodic.fullScanReason,
     invalidSnapshotFallback: recovered.fullScanReason,

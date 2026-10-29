@@ -6,7 +6,7 @@ import { jsonRequest, requestJson } from "../lib/http";
 import { t, useLocale } from "../i18n";
 
 type Source = { category: string; name: string; root: string };
-type Preview = { previewId: string; sources: Source[]; retainedRecords: number; targets: Array<Source & { readable: boolean; empty: boolean }> };
+type Preview = { previewId: string; sources: Source[]; retainedRecords: number; targets: Array<Source & { readable: boolean; empty: boolean; sample?: { checked: number; videos: number; subtitles: number; metadata: number; limited: boolean; unreadableDirectories: number } | null }> };
 const blankSource = (index: number): Source => ({ category: "LOCAL", name: `Library-${index}`, root: "" });
 const validLabel = (value: string) => value.trim().length > 0 && value.trim().length <= 80 && !/[/\\:\r\n\0]/.test(value);
 
@@ -91,7 +91,10 @@ export function LibrarySourcesEditor() {
         description={t("保存前自动备份数据库。仅索引媒体，原文件不会移动或改写。")}/>
       {preview.targets.map(target => <div className="source-check" key={`${target.category}/${target.name}`}>
         <strong>{target.name}</strong><span>{t(!target.readable ? "不可读取" : target.empty ? "空目录" : "可读取")}</span><code>{target.root}</code>
+        {target.sample && <Typography.Text type="secondary">{t("抽样 {{p0}} 项：视频 {{p1}}、字幕 {{p2}}、资料 {{p3}}", { p0: target.sample.checked, p1: target.sample.videos, p2: target.sample.subtitles, p3: target.sample.metadata })}{target.sample.limited ? ` · ${t("仅抽样，非完整结果")}` : ""}</Typography.Text>}
+        {target.sample?.unreadableDirectories ? <Typography.Text type="warning">{t("部分子目录不可读取，请检查权限")}</Typography.Text> : null}
       </div>)}
+      {preview.targets.some(target => target.sample && target.sample.checked > 0 && target.sample.videos === 0) && <Alert type="warning" title={t("抽样未发现视频，请确认路径；完整扫描会继续检查子目录。")}/>}
       {preview.targets.some(target => !target.readable) && <Alert type="error" title={t("请检查挂载、路径与读取权限，然后重新预览。")}/>}
       {preview.targets.some(target => target.empty) && <Checkbox checked={allowEmpty} onChange={event => setAllowEmpty(event.target.checked)}>{t("确认使用空目录，保留失联馆藏记录")}</Checkbox>}
       <Button type="primary" loading={busy} disabled={preview.targets.some(target => !target.readable) || (preview.targets.some(target => target.empty) && !allowEmpty)} onClick={() => void save()}>{t("备份并开始扫描")}</Button>

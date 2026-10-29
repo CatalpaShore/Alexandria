@@ -29,6 +29,7 @@ import { inspectStorageSource, type StorageAccessState } from "./storageAccess.j
 
 import { ensureLibraryIdentitySchema, recordFileIdentity, reconcileLibraryMoves } from "./libraryIdentity.js";
 import { importLocalLibrary, isLibraryArtwork } from "./localLibraryImport.js";
+import { getSidecarLanguage, selectSidecarMedia, type SidecarMedia } from "./sidecarMatching.js";
 
 export { parseMediaName } from "./mediaName.js";
 
@@ -63,6 +64,16 @@ type SidecarCandidate = {
 export type ScanOptions = {
   forceFull?: boolean;
   fullScanIntervalMs?: number;
+  onProgress?: (progress: ScanProgress) => void;
+  onInitialReady?: () => void;
+};
+
+export type ScanProgress = {
+  phase: "discovering" | "importing" | "fingerprinting" | "finalizing";
+  indexed: number;
+  completed: number;
+  total: number;
+  initialReady: boolean;
 };
 
 const sidecarExtensions = new Set([".srt", ".ass", ".ssa", ".vtt", ".sub", ".nfo"]);
@@ -74,7 +85,10 @@ function normalizeRelativePath(source: MediaSource, filePath: string): string {
 function createId(source: MediaSource, sourceRelativePath: string): string {
   return crypto
     .createHash("sha1")
-    .update(`${source.name}:${source.root}:${sourceRelativePath}`)
+    // Include the category: two sources can share both a name and physical
+    // root while remaining separate logical libraries. Existing IDs are
+    // retrieved by relative path above and are never regenerated.
+    .update(JSON.stringify([source.category, source.name, source.root, sourceRelativePath]))
     .digest("hex")
     .slice(0, 16);
 }
@@ -145,24 +159,6 @@ async function toMediaRow(
   };
 }
 
-function getSidecarLanguage(name: string): { language: string; label: string } {
-  const normalized = name.toLowerCase();
-  const tokens = normalized.split(/[.\-_ ]+/);
-  if (tokens.some((token) => ["zh", "zhcn", "chs", "sc", "cn"].includes(token))) {
-    return { language: "zh-CN", label: "简体中文" };
-  }
-  if (tokens.some((token) => ["zhtw", "cht", "tc"].includes(token))) {
-    return { language: "zh-TW", label: "繁体中文" };
-  }
-  if (tokens.some((token) => ["ja", "jpn", "jp"].includes(token))) {
-    return { language: "ja", label: "日语" };
-  }
-  if (tokens.some((token) => ["en", "eng"].includes(token))) {
-    return { language: "en", label: "English" };
-  }
-  return { language: "", label: "" };
-}
-
 async function indexSidecars(
   candidates: SidecarCandidate[],
   scanToken: string,
@@ -193,45 +189,20 @@ async function indexSidecars(
     const sourceRelativePath = normalizeRelativePath(candidate.source, candidate.filePath);
     const directory = path.dirname(sourceRelativePath) === "." ? "" : path.dirname(sourceRelativePath);
     const sidecarBase = path.basename(candidate.filePath, extension);
-    const parsed = parseMediaName(sidecarBase, directory);
-    let media = parsed.normalizedCode
-      ? (db.prepare(
-          `
-          SELECT id
-          FROM media_files
-          WHERE library_category = @category
-            AND source_name = @sourceName
-            AND normalized_code = @normalizedCode
-          ORDER BY CASE WHEN directory = @directory THEN 0 ELSE 1 END, size DESC
-          LIMIT 1
-        `
-        ).get({
-          category: candidate.source.category,
-          sourceName: candidate.source.name,
-          normalizedCode: parsed.normalizedCode,
-          directory
-        }) as { id: string } | undefined)
-      : undefined;
-
-    if (!media) {
-      media = db.prepare(
-        `
-        SELECT id
-        FROM media_files
-        WHERE library_category = @category
-          AND source_name = @sourceName
-          AND directory = @directory
-          AND media_type = 'video'
-          AND (@sidecarBase LIKE basename || '%' OR basename LIKE @sidecarBase || '%')
-        ORDER BY ABS(LENGTH(basename) - LENGTH(@sidecarBase)), size DESC
-        LIMIT 1
-      `
-      ).get({
-        category: candidate.source.category,
-        sourceName: candidate.source.name,
-        directory,
-        sidecarBase
-      }) as { id: string } | undefined;
+    const findInDirectory = (mediaDirectory: string) => {
+      const rows = db.prepare(`
+        SELECT id, basename, normalized_code FROM media_files
+        WHERE library_category = ? AND source_name = ? AND directory = ?
+          AND media_type = 'video' AND scan_token = ?
+      `).all(candidate.source.category, candidate.source.name, mediaDirectory, scanToken) as SidecarMedia[];
+      return selectSidecarMedia(sidecarBase, rows);
+    };
+    let media = findInDirectory(directory);
+    // Common media-server layouts keep subtitles in Subs/ or Subtitles/ next
+    // to the video. Never search unrelated directories or the whole library.
+    if (!media && extension !== ".nfo" && /^(subs|subtitles)$/i.test(path.basename(directory))) {
+      const parent = path.dirname(directory);
+      media = findInDirectory(parent === "." ? "" : parent);
     }
 
     if (!media) continue;
@@ -347,6 +318,10 @@ export async function scanMediaLibrary(options: ScanOptions = {}): Promise<ScanS
   let directoriesRead = 0;
   let directoriesSkipped = 0;
   let filesReused = 0;
+  let initialReady = false;
+  const report = (phase: ScanProgress["phase"], completed = 0, total = 0) =>
+    options.onProgress?.({ phase, indexed, completed, total, initialReady });
+  report("discovering");
   const sidecarCandidates: SidecarCandidate[] = [];
   const existingRows = new Map(
     (db.prepare("SELECT relative_path, absolute_path, source_root, size, mtime_ms FROM media_files WHERE id NOT IN (SELECT media_id FROM library_availability WHERE available=0)").all() as Array<{
@@ -420,6 +395,7 @@ export async function scanMediaLibrary(options: ScanOptions = {}): Promise<ScanS
         touchMany(unchangedBatch);
         unchangedBatch = [];
       }
+      report("discovering");
     }
 
     async function processMediaFile(filePath: string, stat: Stats): Promise<void> {
@@ -652,18 +628,36 @@ export async function scanMediaLibrary(options: ScanOptions = {}): Promise<ScanS
 
   const availableRoots = [...new Set(availableSources.map((source) => source.root))];
   db.prepare("UPDATE media_files SET normalized_code='LOCAL-' || UPPER(id) WHERE normalized_code=''").run();
+  // A brand-new library has no historical IDs to reconcile. Make its local
+  // metadata and subtitles available before reading every media byte for the
+  // migration fingerprint. Existing libraries keep the conservative order.
+  let sidecars = 0;
+  if (oldIds.size === 0) {
+    report("importing");
+    await importLocalLibrary(scanToken);
+    sidecars = await indexSidecars(sidecarCandidates, scanToken, availableRoots);
+    enqueuePendingSubtitleJobs(500);
+    initialReady = true;
+    options.onInitialReady?.();
+  }
   const identityRows = db.prepare("SELECT id,absolute_path,size,mtime_ms FROM media_files WHERE scan_token=?").all(scanToken) as Array<{ id: string; absolute_path: string; size: number; mtime_ms: number }>;
+  report("fingerprinting", 0, identityRows.length);
+  let fingerprinted = 0;
   for (const media of identityRows) {
     try { await recordFileIdentity(db, media); }
     catch (error) { console.warn("Identity fingerprint deferred", media.id, error instanceof Error ? error.message : String(error)); }
+    report("fingerprinting", ++fingerprinted, identityRows.length);
   }
+  report("finalizing");
   reconcileLibraryMoves(db, scanToken, oldIds);
   // Missing/offline sources retain their IDs and every dependent user record.
   // Removal is an explicit maintenance action, never a scan side effect.
   const removed = 0;
-  await importLocalLibrary(scanToken);
-  const sidecars = await indexSidecars(sidecarCandidates, scanToken, availableRoots);
-  enqueuePendingSubtitleJobs(500);
+  if (!initialReady) {
+    await importLocalLibrary(scanToken);
+    sidecars = await indexSidecars(sidecarCandidates, scanToken, availableRoots);
+    enqueuePendingSubtitleJobs(500);
+  }
   const finishedAt = new Date().toISOString();
   const nextSnapshot: ScanSnapshot = {
     version: scanSnapshotVersion,

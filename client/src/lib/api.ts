@@ -937,6 +937,7 @@ export type FacetsResponse = {
     totalSize: number;
   };
   scanning: boolean;
+  scanProgress?: { phase: "discovering" | "importing" | "fingerprinting" | "finalizing"; indexed: number; completed: number; total: number; initialReady: boolean } | null;
   latestScan: ScanSummary | null;
 };
 

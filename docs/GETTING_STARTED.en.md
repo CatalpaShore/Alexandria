@@ -1,5 +1,11 @@
 # Start with the folders you already have
 
+The web preview samples up to 300 directory entries and reports videos, subtitles and metadata; it is not a full inventory. For an empty new library, local metadata and subtitles become available before full-file fingerprinting completes. Existing libraries retain conservative migration matching.
+
+Matching subtitles can be placed next to the video or in its `Subs` or `Subtitles` subfolder, for example `Subs/Sample-001.zh-Hant.srt`. Ambiguous versions are left unmatched rather than guessed.
+
+To access WebDAV or other supported remote storage today, configure a third-party mount such as [rclone](https://rclone.org/commands/rclone_mount/) and connect its local mount path as a regular folder. For example, after configuring `myremote` and creating an empty mount directory, run `rclone mount myremote: /absolute/path/to/mount --read-only`. Keep it running, check permissions, and for Docker bind-mount it read-only before starting the container. This is not a native connector: seeking and availability depend on the mount and remote, and first-time full-file hashing can consume substantial traffic. Never commit credentials or mount configuration.
+
 Continue with the [feature guide](USER_GUIDE.en.md), [playback](USER_GUIDE.en.md#playback), [subtitles](USER_GUIDE.en.md#subtitles), or [documentation index](README.en.md).
 
 [简体中文](GETTING_STARTED.md) · [English](GETTING_STARTED.en.md) · [日本語](GETTING_STARTED.ja.md)

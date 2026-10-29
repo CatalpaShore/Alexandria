@@ -22,6 +22,11 @@ describe("first-run library setup", () => {
     expect(await fs.readdir(root)).not.toContain(".local");
     expect(await fs.readFile(path.join(media, "Sample.mp4"), "utf8")).toBe(before);
   });
+  it("recognizes FLV and M2TS in the same way as the scanner", async () => {
+    await fs.writeFile(path.join(media, "Another.flv"), "fixture");
+    await fs.writeFile(path.join(media, "Third.m2ts"), "fixture");
+    expect((await inspectSource(media)).video).toBe(3);
+  });
   it("creates private JSON once, preserving media and an existing env file", async () => {
     const env = "DATA_DIR=.local/data\nPORT=4320\n";
     await fs.writeFile(path.join(root, ".env"), env);

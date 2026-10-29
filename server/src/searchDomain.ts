@@ -343,6 +343,7 @@ function withAdditionalWhere(baseWhereSql: string, extra: string): string {
 export function createSearchDomain(options: {
   isScanActive: () => boolean;
   getLatestScan: () => unknown;
+  getScanProgress?: () => unknown;
 }) {
   const mediaResponseCache = new Map<string, JsonCacheEntry>();
   const facetResponseCache = new Map<string, JsonCacheEntry>();
@@ -808,6 +809,7 @@ export function createSearchDomain(options: {
       metadataSeries: disjunctiveMetadataFacet("metadataSeries", "series"),
       totals: db.prepare("SELECT COUNT(*) AS count, COALESCE(SUM(size), 0) AS totalSize FROM media_files").get(),
       scanning: options.isScanActive(),
+      scanProgress: options.getScanProgress?.() ?? null,
       latestScan: options.getLatestScan()
     };
   }
